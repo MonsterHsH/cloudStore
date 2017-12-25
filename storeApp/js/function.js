@@ -1,8 +1,8 @@
 /*获取屏幕宽和高*/
 function getWH()
 {
-	var bodyHeight=screen.availHeight;
-	var bodyWeight=screen.availWidth;
+	var bodyHeight=document.documentElement.clientHeight;
+	var bodyWeight=document.documentElement.clientWidth;
 	var bodyWH={
 		"width":bodyWeight,
 		"height":bodyHeight
