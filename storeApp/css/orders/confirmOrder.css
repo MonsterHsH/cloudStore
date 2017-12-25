@@ -1,0 +1,235 @@
+body {
+	overflow: hidden;
+	background-color: #F2F2F2;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#header {
+	height: 40px;
+	background-color: red;
+	position: fixed;
+	top: 0;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+}
+
+#header ul li {
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	font-weight: bold;
+}
+
+#header ul #back {
+	text-align: left;
+}
+
+#header ul #back img {
+	margin: 8px 0 0 10px;
+}
+
+#header ul #message {
+	text-align: right;
+}
+
+#header ul #message img {
+	margin: 8px 15px 0 0;
+}
+
+#footer {
+	height: 50px;
+	background-color: #E4E4E4;
+	position: fixed;
+	bottom: 0px;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+}
+
+#footer #count {
+	float: left;
+	line-height: 50px;
+	margin: 0 0 0 20px;
+}
+
+#footer #count i,
+#totalPrice {
+	color: red;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#footer a {
+	color: white;
+	background-color: red;
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	float: right;
+}
+
+#personInfo {
+	margin-top: 45px;
+	height: 50px;
+	background-color: white;
+	position: relative;
+}
+
+#personInfo img {
+	position: absolute;
+	left: 0px;
+}
+
+#personInfo span {
+	font-size: 12px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#personInfo #customer {
+	position: absolute;
+	left: 55px;
+	top: 10px;
+	width: 180px;
+}
+
+#personInfo #cusPhone {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+#personInfo #cusAdderss {
+	position: absolute;
+	left: 55px;
+	top: 30px;
+	width: 240px;
+}
+
+#goodsInfo {
+	background-color: white;
+	margin-top: 5px;
+	background-color: white;
+}
+
+#goodsInfo:after {
+	content: "";
+	height: 55px;
+	display: block;
+	background-color: #F2F2F2;
+}
+
+.store {
+	width: 100%;
+	margin-top: 5px;
+}
+
+.goodsList {
+	width: 100%;
+	margin-top: 1px;
+}
+
+.storeTitle {
+	width: 100%;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 0 15px;
+	background-color: white;
+}
+
+.goods {
+	position: relative;
+	width: 100%;
+	height: 90px;
+	margin: 2px auto;
+	background-color: #F2F2F2;
+}
+
+.goodsContent {
+	height: 110px;
+}
+
+.goodsPicture {
+	display: inline-block;
+	width: 90px;
+	height: 80px;
+	background-image: url(../../img/trolley/timg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 6px;
+	left: 10px;
+}
+
+.goodsTitle {
+	position: absolute;
+	left: 115px;
+	top: 20px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 18px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.goodsPrice {
+	position: absolute;
+	bottom: 10px;
+	left: 115px;
+	color: red;
+}
+
+.goodsCounts {
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+}
+
+.payInfo {
+	margin-top: 2px;
+	padding: 0 15px;
+}
+
+.payInfo p {
+	margin: 10px 0;
+	font-size: 14px;
+}
+
+.deliverWay {
+	float: right;
+	border-radius: 5px;
+}
+
+.postage {
+	float: right;
+}
+
+.leaveWord {
+	padding: 2px 10px 0;
+	border-top: 4px solid #F2F2F2;
+	font-size: 14px;
+}
+
+.leaveWords {
+	border-color: #E4E4E4;
+	resize: none;
+	width: 100%;
+}

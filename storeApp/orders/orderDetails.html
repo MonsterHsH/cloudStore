@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/orders/orderDetails.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var bodyWH=getWH();
+				setTargetWidth("#header",bodyWH.width+"px");
+				setTargetWidth("#orderInfo",bodyWH.width+"px");
+				setTargetWidth("#address",bodyWH.width-70+"px");
+				setTargetWidth(".goodsTitle",bodyWH.width-120+"px");
+				setTargetWidth("#otherInfo",bodyWH.width+"px");
+				//返回按钮单击事件
+				Qselect("#back").onclick=function(){
+					history.back();
+				};
+			};
+			
+			
+		</script>
+		</head>
+	<body>
+		<header id="header">
+			<ul id="topMenu">
+				<li id="back"><img src="../img/back_5.png"/></li>
+				<li>订单详情</li>
+				<li id="message"><a href="../message/message.html"><img src="../img/message/message1.png"/></a></li>
+			</ul>
+		</header>
+		<div id="orderInfo">
+			<p id="orderID">订单号：<span>59659594562945945</span></p>
+			<p id="createTime">创建事件：<span>2017-11-03</span></p>
+			<div id="customerInfo">
+				<img src="../img/receiveGoods.png"/>
+				<p id="receiver">收货人：<span>杰哥</span></p>
+				<p id="phone">联系电话：<span>13103067513</span></p>
+				<p id="address">收货人地址：<span>河北省廊坊市三河市燕郊经济开发区华北科技学院</span></p>
+			</div>
+			<div id="goodsDetails">
+				<div class="storeTitle">
+					<a class="storeName" href="../store/store.html">二货商店<img src="../img/trolley/go.png" alt="go!" /></a>
+					<span class="status">交易成功</span>
+				</div>
+					<ul class="goodsList">
+						<li class="goods" id="goodsID">
+							<img class="goodsPicture" src="../img/trolley/timg.jpg"/>
+							<span class="isNewGoods">新品</span>
+							<a class="goodsTitle" href="orderDetails.html">无核酸甜红杏肉200g,的咖啡机的金发放假赶紧抢购了</a>
+							<span class="goodsPrice">￥<span>12.5</span></span>
+							<span class="goodsType">类型：<span>食品</span></span>
+							<span class="counts">x<span>1</span></span>
+						</li>
+						<li class="goods" id="goodsID2">
+							<img class="goodsPicture" src="../img/trolley/timg.jpg"/>
+							<span class="isNewGoods">新品</span>
+							<a  class="goodsTitle" href="orderDetails.html">无核酸甜红杏肉200g,的咖啡机的金发放假赶紧抢购了</a>
+							<span class="goodsPrice">￥<span>12.5</span></span>
+							<span class="goodsType">类型：<span>食品</span></span>
+							<span class="counts">x<span>1</span></span>
+						</li>		
+					</ul>
+					<div class="button">
+						<a href="#"><span class="service">申请售后</span></a>
+						<!--<a href=""><span class="cancel">取消订单</span></a>-->
+						<a href="#"><span class="delete">删除订单</span></a>
+						<!--<a href="#"><span class="goToPay">去付款</span></a>-->
+						<!--<a href="#"><span class="confirm">确认收货</span></a>-->
+						<a href="../personal/goodsEvalute.html"><span class="goToEva">评价</span></a>
+					</div>
+			</div>
+			<div id="otherInfo">
+				<p id="postage">邮费：<span>￥5</span></p>
+				<p id="shouldPay">实付款：<span>￥10</span></p>
+				<p id="chatWithSeller"><a id="sellerID" href="#"><img src="../img/seller2.png"/><span>联系客服</span></a></p>
+				<p id="sellerPhone"><a href="#"><img src="../img/phone.png"/><span>18875686859</span></a></p>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,91 @@
+.store{
+				width: 100%;
+			}
+			.store .storeTitle{
+				width: 100%;
+				height: 35px;	
+				padding: 10px 0 0 10px;
+				box-sizing: border-box;
+			}
+			.store .storeTitle i{
+				position: relative;
+				top: 3px;
+				margin: 0 5px 0 0;
+				box-sizing: border-box;
+			}
+			.goodsIntro{
+				width: 100%;
+				height: 110px;
+				background-color: #F2F2F2;
+				margin: 2px 0;
+			}
+			
+			.goodsIntro .goodsSelect{
+				background-image: url(../img/trolley/unselect.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				display:inline-block;
+				height: 110px;
+				width: 30px;
+				float: left;
+			}
+			.goodsContent{
+				float: right;
+				height: 110px;
+				position: relative;
+			}
+			.goodsContent .goodsPicture{
+				height: 100px;
+				width: 114px;
+				margin: 5px 0;
+				background-image: url(../img/trolley/timg.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% 100%;
+			}
+			.goodsContent .isNewGoods{
+				display: inline-block;
+				width: 40px;
+				height: 16px;
+				line-height: 16px;
+				border-radius:0 8px 8px 0;
+				background-color: red;
+				font-size: 14px;
+				text-indent: 5px;
+				position: absolute;
+				top: 5px;
+				left: 114px;
+			}
+			.goodsContent .goodsEdit{
+				position: absolute;
+				top:5px;
+				right: 10px;	
+			}
+			.goodsContent .goodsTitle{
+				display: block;
+				height: 18px;
+				line-height: 18px;
+				position: absolute;
+				right: 5px;
+				top: 30px;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+				overflow: hidden;
+			}
+			.goodsContent .goodsType{
+				position: absolute;
+				top: 58px;
+				left: 120px;
+			}
+			.goodsContent .goodsPrice{
+				position: absolute;
+				bottom: 8px;
+				left: 120px;
+			}			
+			.goodsContent .goodsCounts{
+				position: absolute;
+				bottom: 8px;
+				right: 5px;
+			}
+			
+			

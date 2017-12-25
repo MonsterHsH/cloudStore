@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/store/myStore.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function()
+			{
+				var bodyWH=getWH(); 
+				setTargetWidth("#outer",bodyWH.width+"px");
+				setTargetWidth("#goodsList ul li",(bodyWH.width-8)*0.5+"px");
+			}	
+		</script>
+		
+	</head>
+	<body>
+		<div id="outer">
+			<div id="personHeader">
+				<a href="../personal/personInfomation.html" id="personSet"><img src="../img/person/set.png"/></a>
+				<a href="../message/message.html" id="goToMessage"><img src="../img/message/message1.png"/></a>
+				<div id="photo">
+					<img src="../img/person/Master-Shifu-icon.png" alt="头像" />
+				</div>
+				<div id="myPointsAndNickName">
+					<p id="myNickName">店名:&nbsp;&nbsp;<span>杰哥的代码铺</span></p>	
+					<p id="myPoints">&nbsp;&nbsp;<span>11524</span></p>
+				</div>
+			</div>
+			<div id="allOrder">
+				<div id="order">
+					<span id="orderSpan">店铺订单</span>
+					<a id="orderA" href="../orders/allOrders.html">查看所有订单 <img src="../img/person/go.png" alt="go!"/></a>
+				</div>
+				<div id="waitDiv">
+					<a id="waitPay" href="../orders/allOrders.html"><img src="../img/person/waitPay.png" class="functionEntry"/>&nbsp;&nbsp;待付款 <span class="goodsCount">1</span></a>
+					<a id="waitReceive" href="../orders/allOrders.html"><img src="../img/person/waitReceive.png" class="functionEntry"/>&nbsp;&nbsp;待收货<span class="goodsCount">1</span></a>
+					<a id="waitSend" href="../orders/allOrders.html"><img src="../img/person/waitSendGoods.png" class="functionEntry"/>&nbsp;&nbsp;待发货<span class="goodsCount">1</span></a>
+					<a id="waitEvaluate" href="../orders/allOrders.html"><img src="../img/person/valuate.png" class="functionEntry"/>&nbsp;&nbsp;待评价<span class="goodsCount">1</span></a>
+				</div>
+			</div>	
+			<div id="goodsList">
+				<span id="goodsListTitle">商品列表</span>
+				<ul>
+					<li id="goodsID">
+						<img src="../img/trolley/timg (1).jpg"/>
+						<span class="isOldGoods">旧物</span>
+						<p class="goodsTitle">动感单车，贱卖，贱卖了，你买我单车，我送你好身材</p>
+						<span class="price">￥1250</span>
+						<span class="counts">x5</span>
+					</li>
+					<li id="goodsID2">
+						<img src="../img/trolley/timg.jpg"/>
+						<span class="isNewGoods">新品</span>
+						<p class="goodsTitle">超级好吃的干货，不吃后悔哦，瞧一瞧，看一看</p>
+						<span class="price">￥12.5</span>
+						<span class="counts">x5</span>
+						
+						
+					</li>
+					<li id="goodsID3">
+						<img src="../img/trolley/timg.jpg"/>
+						<span class="isNewGoods">新品</span>
+						<p class="goodsTitle">超级好吃的干货，不吃后悔哦，瞧一瞧，看一看</p>
+						<span class="price">￥12.5</span>
+						<span class="counts">x5</span>
+						
+					</li>
+					<li id="goodsID4">
+						<img src="../img/trolley/timg (1).jpg"/>
+						<span class="isOldGoods">旧物</span>
+						<p class="goodsTitle">动感单车，贱卖，贱卖了，你买我单车，我送你好身材</p>
+						<span class="price">￥1250</span>
+						<span class="counts">x5</span>
+						
+					</li>
+				</ul>
+				
+			</div>
+			
+		</div>	
+			
+			
+	<div id="footer">
+		<a href="../index.html" id="home"></a>
+		<a href="../trolley/trolley.html" id="trolley"></a>
+		<a href="../personal/person.html" id="person"></a>
+	</div>
+	</body>
+</html>

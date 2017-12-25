@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/personal/addressManager.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var bodyWH=getWH();
+				setTargetWidth("#header",bodyWH.width+"px");
+				setTargetHeight("#alterAddress",bodyWH.height-40+"px");
+				setTargetHeight("#addAddress",bodyWH.height-40+"px");
+				setTargetWidth("#addAddress",bodyWH.width+"px");
+				setTargetWidth("#alterAddress",bodyWH.width+"px");
+				//给返回按钮绑定单击响应函数
+				Qselect("#back").onclick=function(){
+					history.back();
+				};
+			
+			};
+			
+		</script>
+	</head>
+	<body>
+		<header id="header">
+			<span id="back"><img src="../img/back_5.png"/></span>
+			<span id="title">地址管理</span>
+			<span id="edit"><img src="../img/person/addAddress.png"/></span>
+		</header>
+		<ul>
+			<li id="addressID">
+				<span class="name">许和成</span>
+				<span class="phone">13103067513</span>
+				<p class="address">河北省廊坊市三河市燕郊经济开发区华北科技学院fsdfsdfsdfASDF廊坊市三河市燕郊经济开发区华北科技学</p>
+				<label>
+					<img src="../img/person/selected.png"/>
+					<input type="checkbox" name="default" value="default" />默认地址
+				</label>
+				<button class="alert">修改</button>
+				<button class="delete">删除</button>
+			</li>
+			<li id="addressID2">
+				<span class="name">许和成</span>
+				<span class="phone">13103067513</span>
+				<p class="address">河北省廊坊市三河市燕郊经济开发区华北科技学院fsdfsdfsdfASDF廊坊市三河市燕郊经济开发区华北科技学</p>
+				<label>
+					<img src="../img/person/selected.png"/>
+					<input type="checkbox" name="default" value="default" />默认地址
+				</label>
+				<button class="alert">修改</button>
+				<button class="delete">删除</button>
+			</li>
+		</ul>
+		<div id="alterAddress">
+			<label>收件人：<input type="text" name="receiver" /></label>
+			<label>电话：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Phone" /></label>
+			<label>地址：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="adderss" id="address"/></label>
+			<input type="text" name="province" hidden/>
+			<input type="text" name="city" hidden />
+			<input type="text" name="county" hidden />
+			<input type="text" name="town" hidden />
+			<label>学校：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="school" /></label>
+			<button id="doAlert">确定</button>
+			<button id="cancelAlert">取消</button>
+		</div>
+		
+		<div id="addAddress">
+			<div id="province">
+				<p>省</p>
+			</div>
+			<div id="city">
+				<p>市</p>
+			</div>
+			<div id="county">
+				<p>县</p>
+			</div>
+			<div id="镇">
+				<p>镇</p>
+			</div>
+			<div id="detailsAddress"></div>
+		</div>
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+			var checked=Qselect("input[type=checkbox]");
+			for(var i=0;i<checked.length;i++){
+				checked[i].onclick=function(event){
+					var target=event.target;
+					var img=target.previousSibling.previousSibling;
+					if(target.checked){
+						img.src="../img/person/selected.png";
+					}
+					else{
+						img.src="../img/person/unselect.png";
+					}
+				};
+			}
+		</script>
+	</body>
+</html>

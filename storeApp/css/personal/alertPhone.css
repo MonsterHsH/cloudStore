@@ -1,0 +1,92 @@
+body {
+	overflow: hidden !important;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+#header {
+	height: 40px;
+	position: fixed;
+	top: 0;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+	background-color: red;
+}
+#header span{
+	display: block;
+	height: 40px;
+	width: 33.3%;
+	line-height: 40px;
+	float: left;
+	color: white;
+	font-weight: bold;
+}
+#title{
+	text-align: center;
+}
+#header #back {
+	text-align: left;
+}
+#back img {
+	margin: 8px 0 0 10px;
+}
+#header:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+form{
+	margin-top: 50px;
+}
+button{
+	border: none;
+	outline: none;
+	display: inline-block;
+}
+#newPhone,#checkNumber{
+	display: inline-block;
+	height: 40px;
+	margin-top:5px ;
+	border: 1px solid #E4E4E4;
+	box-sizing: border-box;
+	line-height: 40px;
+	padding-left:10px ;
+}
+#checkNumber{
+	width: 200px;
+}
+input{
+	height: 30px;
+	padding: 8px 0;
+	line-height: 14px;
+	font-size: 14px;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+#checkNumber input{
+	width: 100px;
+}
+#sendCheck{
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	background-color: white;
+	border-radius: 10px;
+	background-color: #F2F2F2;
+}
+#submit{
+	display: block;
+	width: 90%;
+	height: 40px;
+	margin: 20px auto;
+	background-color: white;
+	border-radius: 10px;
+	background-color: #33CCFF;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	opacity: 0.75;
+}

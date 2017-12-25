@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/personal/personalInformation.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var bodyWH=getWH();
+				setTargetWidth("#header",bodyWH.width+"px");
+				setTargetWidth("table",bodyWH.width+"px");
+				//给返回按钮绑定单击响应函数
+				Qselect("#back").onclick=function(){
+					history.back();
+				};
+			};
+		</script>
+		
+	</head>
+	<body>
+		<header id="header">
+			<span id="back"><img src="../img/back_5.png"/></span>
+			<span id="title">个人信息</span>
+			<a id="menu" href="../personal/setPersonInformation.html"><img src="../img/person/menu.png"/></a>
+		</header>
+		<div id="photo">
+			<img src="../img/person/Master-Shifu-icon.png"/>
+		</div>
+		<table>
+			<tr>
+				<td id="customerID" colspan="2">ID:<span>C201711071230001</span></td>
+			</tr>
+			<tr>
+				<td id="customerNicName" colspan="2">昵称：<span>熊猫灬拽拽</span></td>
+			</tr>
+			<tr>
+				<td id="birth">生日：<span>1993-03-19</span></td>
+				<td id="sex">性别：<span>男</span></td>
+			</tr>
+			<tr>
+				<td id="mail" colspan="2">邮箱：<span>82871987@qq.com</span></td>
+			</tr>
+			<tr>
+				<td id="phone" colspan="2">手机：<span>13103067513</span></td>
+			</tr>
+			<tr>
+				<td id="school" colspan="2">学校：<span>华北科技学院</span></td>
+			</tr>
+		</table>
+	</body>
+</html>

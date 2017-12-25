@@ -1,0 +1,536 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H5FF97F3D",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "云格子铺",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.3",/*应用版本名称*/
+		"code": ""
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": ""
+	},
+	"permissions": {
+		"Accelerometer": {
+			"description": "访问加速度感应器"
+		},
+
+
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Device": {
+			"description": "访问设备信息"
+		},
+		"Downloader": {
+			"description": "文件下载管理"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"File": {
+			"description": "访问本地文件系统"
+		},
+		"Gallery": {
+			"description": "访问系统相册"
+		},
+
+		"Invocation": {
+			"description": "使用Native.js能力"
+		},
+		"Orientation": {
+			"description": "访问方向感应器"
+		},
+		"Proximity": {
+			"description": "访问距离感应器"
+		},
+		"Storage": {
+			"description": "管理应用本地数据"
+		},
+
+		"Uploader": {
+			"description": "管理文件上传任务"
+		},
+		"Runtime": {
+			"description": "访问运行期环境"
+		},
+		"XMLHttpRequest": {
+			"description": "跨域网络访问"
+		},
+		"Zip": {
+			"description": "文件压缩与解压缩"
+		},
+
+
+
+		"Webview": {
+			"description": "窗口管理"
+		},
+		"NativeUI": {
+			"description": "原生UI控件"
+		},
+		"Navigator": {
+			"description": "浏览器信息"
+		},
+		"NativeObj": {
+			"description": "原生对象"
+		},
+		"Geolocation": {}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": false,
+			"delay": "0"
+		},
+		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": [
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.INTERNET\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+				]
+			},
+			"orientation": [
+				"portrait-primary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png", /*iPhone4程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+						"retina8": "unpackage/res/icons/180x180.png", /*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"settings-retina8": "unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": ""
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"login.html": {
+				"resources": [
+					"img/user.png",
+					"img/login-background.png",
+					"img/check.png",
+					"css/mui.min.css",
+					"img/logo.png",
+					"img/Alipay.png",
+					"img/wechat.png",
+					"css/reset.css",
+					"register.html",
+					"css/login_register.css",
+					"index.html",
+					"img/QQ.png",
+					"img/microblog.png",
+					"img/help.png",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index.html": {
+				"resources": [
+					"css/mui.min.css",
+					"img/logo.png",
+					"index.html",
+					"css/reset.css",
+					"img/index/class.png",
+					"img/index.png",
+					"img/index/old.png",
+					"img/2c5aac7096c34b2bbbe78200375ffb95_th.png",
+					"img/back_5.png",
+					"img/index/lost.png",
+					"img/message/message1.png",
+					"img/index/newGoods.png",
+					"img/index/point2.png",
+					"img/index/store.png",
+					"img/index/hotGoods.png",
+					"img/index/point1.png",
+					"img/trolley.png",
+					"img/index/search.png",
+					"img/person.png",
+					"trolley.html",
+					"goodsList.html",
+					"storeList.html",
+					"myClass.html",
+					"login.html",
+					"lostAndFound.html",
+					"search/search.html",
+					"img/index_selected.png",
+					"person.html",
+					"message/message.html"
+				],
+				"refer": [
+					"trolley/trolley.html",
+					"goodsManger/goodsList.html",
+					"personal/person.html",
+					"store/storeList.html",
+					"goodsManger/goodsDetails.html",
+					"shareTrading/shareTrading.html",
+					"lostAndFound/lostAndFound.html"
+				],
+				"priority": 0
+			},
+			"register.html": {
+				"resources": [
+					"css/login_register.css",
+					"css/reset.css",
+					"img/back_2.png",
+					"login.html",
+					"regester2.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"regester2.html": {
+				"resources": [
+					"register.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"search/search.html": {
+				"resources": [
+					"img/back_2.png",
+					"index.html",
+					"message/message.html",
+					"goodsList.html",
+					"js/mui.min.js"
+				],
+				"refer": [
+					"goodsManger/goodsList.html"
+				],
+				"priority": 0
+			},
+			"person.html": {
+				"resources": [
+					"img/funny/C960724F5AA07BB2ED9945724D20246B.gif",
+					"index.html",
+					"js/mui.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"storeList.html": {
+				"resources": [
+					"img/funny/2CD81C412C516F72841321FD1A68E45B.jpg",
+					"index.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"myClass.html": {
+				"resources": [
+					"img/funny/C960724F5AA07BB2ED9945724D20246B.gif",
+					"index.html",
+					"js/mui.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"goodsList.html": {
+				"resources": [
+					"img/funny/68AECBCBFD904A4AB977D69755D35334.jpg",
+					"search/search.html",
+					"js/mui.min.js",
+					"index.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"message/message.html": {
+				"resources": [
+					"img/funny/2FFFC7FFE33DFD948A13F750FCD221A7.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"trolley.html": {
+				"resources": [
+					"img/funny/24D572C7144A52D071F8EE251B417180.jpg",
+					"index.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"lostAndFound.html": {
+				"resources": [
+					"img/funny/87ED46124541252FB079FD9D9133C078.png",
+					"index.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"trolley/trolley.html": {
+				"resources": [],
+				"refer": [
+					"index.html",
+					"personal/person.html",
+					"orders/confirmOrder.html"
+				],
+				"priority": 0
+			},
+			"personal/person.html": {
+				"resources": [],
+				"refer": [
+					"trolley/trolley.html",
+					"orders/allOrders.html",
+					"personal/personInfomation.html",
+					"index.html",
+					"store/myStore.html",
+					"store/regesterStore.html",
+					"personal/publishGoods.html"
+				],
+				"priority": 0
+			},
+			"orders/confirmOrder.html": {
+				"resources": [],
+				"refer": [
+					"trolley/trolley.html",
+					"goodsManger/goodsDetails.html",
+					"message/chatWindow.html"
+				],
+				"priority": 0
+			},
+			"goodsManger/goodsDetails.html": {
+				"resources": [],
+				"refer": [
+					"goodsManger/goodsList.html",
+					"orders/confirmOrder.html",
+					"index.html"
+				],
+				"priority": 0
+			},
+			"goodsManger/goodsList.html": {
+				"resources": [],
+				"refer": [
+					"store/store.html",
+					"goodsManger/goodsDetails.html",
+					"search/search.html",
+					"index.html"
+				],
+				"priority": 0
+			},
+			"message/chatWindow.html": {
+				"resources": [],
+				"refer": [
+					"orders/confirmOrder.html"
+				],
+				"priority": 0
+			},
+			"personal/personInfomation.html": {
+				"resources": [],
+				"refer": [
+					"personal/person.html",
+					"personal/setPersonInformation.html"
+				],
+				"priority": 0
+			},
+			"personal/setPersonInformation.html": {
+				"resources": [],
+				"refer": [
+					"personal/personInfomation.html",
+					"personal/alertPersonalInformation.html",
+					"personal/alterPhone.html",
+					"personal/addressManager.html"
+				],
+				"priority": 0
+			},
+			"personal/alterPhone.html": {
+				"resources": [],
+				"refer": [
+					"personal/setPersonInformation.html"
+				],
+				"priority": 0
+			},
+			"personal/alertPersonalInformation.html": {
+				"resources": [],
+				"refer": [
+					"personal/setPersonInformation.html"
+				],
+				"priority": 0
+			},
+			"personal/addressManager.html": {
+				"resources": [],
+				"refer": [
+					"personal/setPersonInformation.html"
+				],
+				"priority": 0
+			},
+			"store/myStore.html": {
+				"resources": [],
+				"refer": [
+					"personal/person.html"
+				],
+				"priority": 0
+			},
+			"store/regesterStore.html": {
+				"resources": [],
+				"refer": [
+					"personal/person.html"
+				],
+				"priority": 0
+			},
+			"personal/publishGoods.html": {
+				"resources": [],
+				"refer": [
+					"personal/person.html"
+				],
+				"priority": 0
+			},
+			"store/storeList.html": {
+				"resources": [],
+				"refer": [
+					"index.html",
+					"store/store.html"
+				],
+				"priority": 0
+			},
+			"shareTrading/shareTrading.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"lostAndFound/lostAndFound.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"orders/allOrders.html": {
+				"resources": [],
+				"refer": [
+					"orders/orderDetails.html",
+					"personal/person.html"
+				],
+				"priority": 0
+			},
+			"orders/orderDetails.html": {
+				"resources": [],
+				"refer": [
+					"orders/allOrders.html",
+					"personal/goodsEvalute.html"
+				],
+				"priority": 0
+			},
+			"store/store.html": {
+				"resources": [],
+				"refer": [
+					"store/storeList.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": []
+		}
+	},
+	"fullscreen": false
+}

@@ -1,0 +1,72 @@
+a {
+	text-decoration: none;
+}
+
+#registerHeader {
+	margin: 20px 0 0;
+	height: 16px;
+	position: relative;
+}
+
+#back {
+	position: absolute;
+	left: 10px;
+	z-index:999 ;
+}
+
+#registerHelp {
+	position: absolute;
+	right: 20px;
+}
+
+#registerPhone {
+	margin: 42px 0 10px;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	border-top: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+	text-indent: 1em;
+}
+
+#registerPhone label {
+	height: 100%;
+}
+
+#registerPhone label input {
+	border: none;
+	outline: none;
+	height: 28px;
+	width: 200px;
+	text-indent: 1em;
+	font-size: 1.2em;
+}
+
+#registerButton {
+	height: 45px;
+	width: 220px;
+	background-color: #33CCFF;
+	opacity: 0.75;
+	display: flex;
+	align-items: center;
+	border-radius: 30px;
+	margin: 20px auto 0;
+}
+
+#registerButton a {
+	margin: 0 auto;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#sendAgain {
+	height: 30px;
+	position: relative;
+}
+
+#sendAgain a {
+	color: #797979;
+	position: absolute;
+	right: 20px;
+}

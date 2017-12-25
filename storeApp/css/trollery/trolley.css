@@ -1,0 +1,241 @@
+html,body {
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#header {
+	width: 100%;
+	height: 40px;
+	background-color: red;
+	position: fixed;
+	-webkit-transform: translateZ(0);
+	top: 0;
+	color: white;
+	font-weight: bold;
+	box-sizing: border-box;
+	z-index: 999;
+}
+
+#header h1 {
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+}
+
+#header i {
+	position: absolute;
+	right: 30px;
+	font-size: 14px;
+	top: 13px;
+}
+
+#footerMenu {
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	-webkit-transform: translateZ(0);
+	bottom: 39px;
+	border-top: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+	z-index: 10;
+	background-color: white;
+}
+
+#menuSelected {
+	position: absolute;
+	top: 13px;
+	left: 5px;
+}
+#menuSelected img{
+	width: 20px;
+	height: 20px;
+}
+#menuSelected input{
+	display: none;
+}
+#menuSelected span {
+	position: relative;
+	top: -4px;
+}
+
+#countMoney {
+	float: right;
+	margin: 13px 90px 13px 0;
+}
+
+#confirmCount {
+	display: block;
+	height: 40px;
+	width: 85px;
+	background-color: red;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	right: 0;
+}
+
+#footer {
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	-webkit-transform: translateZ(0);
+	bottom: -1px;
+	background-color: #F2F2F2;
+	z-index: 999;
+}
+
+#home {
+	position: absolute;
+	left: 30px;
+	top: 5px;
+	background-image: url(../../img/index.png);
+	height: 32px;
+	width: 32px;
+}
+
+#trolley {
+	position: absolute;
+	left: 45%;
+	top: 5px;
+	background-image: url(../../img/trolleySelected.png);
+	height: 32px;
+	width: 32px;
+}
+
+#person {
+	position: absolute;
+	right: 30px;
+	top: 5px;
+	background-image: url(../../img/person.png);
+	height: 32px;
+	width: 32px;
+}
+
+.storeList {
+	margin: 2px auto;
+}
+
+.storeList:before {
+	content: "";
+	display: block;
+	height: 50px;
+}
+
+.storeList:after {
+	content: "";
+	display: block;
+	height: 85px;
+}
+
+.store {
+	width: 100%;
+}
+
+.goodsList {
+	width: 100%;
+}
+
+.storeTitle {
+	width: 100%;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+.storeSelect {
+	margin: 0px 10px 3px 5px;
+}
+.storeSelect img{
+	width: 20px;
+	height: 20px;
+}
+.storeSelect input{
+	display: none;
+}
+
+
+.goods {
+	position: relative;
+	width: 100%;
+	height: 90px;
+	margin: 2px auto;
+	background-color: #F2F2F2;
+}
+
+.goodsSelect {
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	margin: 40px 5px;
+}
+.goodsSelect img{
+	width: 20px;
+	height: 20px;
+}
+.goodsSelect input{
+	display: none;
+}
+.goodsContent {
+	height: 90px;
+	float: left;
+}
+
+.goodsPicture {
+	display: inline-block;
+	width: 90px;
+	height: 80px;
+	background-image: url(../../img/trolley/timg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 5px;
+	left: 30px;
+}
+
+.goodsEdit {
+	position: absolute;
+	top: 6px;
+	right: 10px;
+}
+
+.goodsTitle {
+	position: absolute;
+	left: 125px;
+	top: 20px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 18px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.goodsPrice {
+	position: absolute;
+	bottom: 10px;
+	left: 144px;
+	color: red;
+}
+
+.goodsCounts {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.goodsCounts .counts {
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+}
+
+.addGoods,
+.subGoods {
+	display: none;
+}

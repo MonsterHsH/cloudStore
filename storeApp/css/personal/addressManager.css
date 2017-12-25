@@ -1,0 +1,141 @@
+body {
+	overflow: hidden !important;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+#header {
+	height: 40px;
+	position: fixed;
+	top: 0;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+	background-color: red;
+}
+#header span,#header a{
+	display: block;
+	height: 40px;
+	width: 33.3%;
+	line-height: 40px;
+	float: left;
+	color: white;
+	font-weight: bold;
+}
+#title{
+	text-align: center;
+}
+#header #back {
+	text-align: left;
+}
+#back img {
+	margin: 8px 0 0 10px;
+}
+
+#edit{
+	text-align: right;
+}
+#edit img {
+	margin: 8px 15px 0 0;
+	width: 24px;
+	height: 24px;
+}
+
+ul{
+	margin-top: 40px;
+	font-size: 12px;
+}
+li{
+	border: 1px solid #F2F2F2;
+	padding: 10px 10px;
+	box-sizing: border-box;
+}
+.phone{
+	float: right;
+}
+.address{
+	margin: 10px 0;
+	line-height: 16px;
+}
+li label{
+	display: inline-block;
+	position: relative;
+	top: -5px;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+}
+input[type=checkbox]{
+	visibility: hidden;
+}
+label img{
+	height: 20px;
+	width: 20px;
+	position: relative;
+	left: 15px;
+	top: 5px;
+}
+
+button{
+	display: inline-block;
+	border: none;
+	outline: none;
+	width: 60px;
+	height: 20px;
+	border-radius: 10px;
+	float: right;
+	margin-left:10px;
+}
+li:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+#alterAddress{
+	height: 500px;
+	width: 375px;
+	background-color: white;
+	float: red;
+	z-index: 998;
+	position: absolute;
+	top: 45px;
+	display: none;
+}
+#alterAddress label{
+	padding: 0 10px;
+	display: block;
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	border-bottom: 1px solid #F2F2F2; 
+}
+#alterAddress input{
+	border: none;
+	outline: none;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	width: 60%;
+	
+}
+#alterAddress button{
+	margin: 10px 10px;
+}
+#addAddress{
+	position: absolute;
+	top: 40px;
+	background-color:white ;
+	text-align: center;
+	display: none;
+	
+}
+#addAddress div{
+	border: 1px solid #F2F2F2;
+	height: 30px;
+	line-height: 30px;
+}
+#addAddress div p{
+	height: 30px;
+	line-height: 30px;
+}

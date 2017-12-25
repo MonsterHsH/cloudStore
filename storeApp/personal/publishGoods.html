@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/personal/publishGoods.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var bodyWH=getWH();
+				setTargetWidth("#header",bodyWH.width+"px");
+				setTargetWidth("table",bodyWH.width+"px");
+				setTargetWidth("body p",bodyWH.width+"px");
+				setTargetWidth("td",bodyWH.width*0.2+"px");
+				//给返回按钮绑定单击响应函数
+				Qselect("#back").onclick=function(){
+					history.back();
+				};
+			
+			};
+			
+		</script>
+	</head>
+	<body>
+		<header id="header">
+			<span id="back"><img src="../img/back_5.png"/></span>
+			<span id="title">商品发布</span>
+		</header>
+		<p>上传商品简图</p>
+		<form action="#" method="post">
+			<table>
+				<tr id="addGoodsPic">
+					<td>
+						<label>
+							<img src="../img/person/addGoodsPic.png"/><input type="file" name="goodsPicture1"/>
+							<span>添加图片</span>
+						</label>
+					</td>
+					<td>
+						<label>
+							<img src="../img/person/addGoodsPic.png"/><input type="file" name="goodsPicture2"/>
+							<span>添加图片</span>
+						</label>
+					</td> 
+					<td>
+						<label>
+							<img src="../img/person/addGoodsPic.png"/><input type="file" name="goodsPicture3"/>
+							<span>添加图片</span>
+						</label> 
+					<td>
+						<label>
+							<img src="../img/person/addGoodsPic.png"/><input type="file" name="goodsPicture4"/>
+							<span>添加图片</span>
+						</label>
+					</td>
+					<td>
+						<label>
+							<img src="../img/person/addGoodsPic.png"/><input type="file" name="goodsPicture5"/>
+							<span>添加图片</span>
+						</label>
+					</td>
+				</tr>
+				<tr id="isNewGoods">
+					<td colspan="1">
+						<label id="newGoods"><input type="radio" name="isNewGoods" value="new" /><span>new</span></label>
+					</td>
+					<td colspan="1">
+						<label id="oldGoods"><input type="radio" name="isNewGoods" value="old" /><span>old</span></label>
+					</td>
+					<td colspan="3">
+						<label>
+							数量
+							<input type="number" name="goodsCounts" value="1"/>
+						</label>
+					</td>
+				</tr>
+				<tr id="title">
+					<td colspan="5">
+						<label>
+							标题
+							<input type="text" name="goodsTitle" placeholder="请输入商品标题"/>
+						</label>
+					</td>
+				</tr>
+				<tr id="typeAndStatus">
+					<td colspan="3">
+						<label>
+							类型
+							<select name="goodsType">
+								<option value="1">电脑办公</option>
+							</select>
+						</label>
+					</td>
+					<td colspan="2">
+						<label>
+							状态
+							<select name="goodsStatus">
+								<option value="0">未上架</option>
+								<option value="0">已上架</option>
+								<option value="0">已下架</option>
+							</select>
+						</label>
+					</td>
+				</tr>
+				<tr id="keyWords">
+					<td colspan="5">
+						<label>
+							关键字
+							<input type="text" name="keyWords" placeholder="请输入商品关键字" />
+						</label>
+					</td>
+				</tr>
+				<tr id="priceAnddiscount">
+					<td colspan="2">
+						<label>
+							价格
+							<input type="tel" name="goodsPrice"/>
+						</label>
+					</td>
+					<td colspan="3">
+						<label>
+							优惠
+							<input type="tel" name="goodsDiscount"/>
+						</label>
+					</td>
+				</tr>
+				
+				<tr id="postage">
+					<td colspan="2">
+						<label>
+							邮寄方式
+							<select name="postageWay">
+								<option value="1">自取</option>
+								<option value="2">包邮</option>
+							</select>
+						</label>
+					</td>
+					<td colspan="2">
+						<label>
+							邮费
+							<input type="tel" name="postagePay" value="0.00"/>
+						</label>
+					</td>
+				</tr>
+				<tr id="goodsPara">
+					<td colspan="5">
+						商品参数
+						<img src="../img/person/addGoodsPic.png"/>
+					</td>
+				</tr>
+				<tr id="goodsDetailsPic">
+					<td colspan="5">
+						上传商品详细图片
+						<img src="../img/person/addGoodsPic.png"/>
+					</td>
+				</tr>
+			</table>
+			<button type="submit">添&nbsp;&nbsp;加</button>
+		</form>
+		
+	</body>
+</html>

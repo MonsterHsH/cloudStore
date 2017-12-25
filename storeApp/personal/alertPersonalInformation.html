@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/personal/alertPersonalInformation.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var bodyWH=getWH();
+				setTargetWidth("#header",bodyWH.width+"px");
+				setTargetWidth("table",bodyWH.width+"px");
+				//给返回按钮绑定单击响应函数
+				Qselect("#back").onclick=function(){
+					history.back();
+				};
+			};
+		</script>
+		
+	</head>
+	<body>
+		<header id="header">
+			<span id="back"><img src="../img/back_5.png"/></span>
+			<span id="title">修改个人信息</span>
+		</header>
+		<div id="photo">
+			<img src="../img/person/Master-Shifu-icon.png"/>
+			<button>修改头像</button>
+		</div>
+		<form action="#" method="post">
+			<table>
+				<tr>
+					<td id="customerNicName" colspan="2">
+						昵称：
+						<input type="text" value="熊猫灬拽拽"/>
+					</td>
+				</tr>
+				<tr>
+					<td id="birth">
+						生日：
+						<input type="date" value="1993-03-19"/>
+					</td>
+					<td id="sex">
+						性别：
+						<select name="sex">
+							<option value="0" selected>男</option>
+							<option value="1">女</option>
+							<option value="2">保密</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td id="mail" colspan="2">
+						邮箱：
+						<input type="email" name="email" value="82871987@qq.com" />
+					</td>
+				</tr>
+				<tr>
+					<td id="school" colspan="2">
+						学校：
+						<input type="text" name="school" value="华北科技学院" />
+					</td>
+				</tr>
+			</table>
+			<button type="submit" id="submit">提&nbsp;&nbsp;&nbsp;交</button>
+		</form>
+		
+	</body>
+</html>

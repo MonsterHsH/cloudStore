@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/function.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/regester2.css"/>
+		<script type="text/javascript">
+			window.onload=function(){
+				Qselect("#back").onclick=function(){
+					history.back();
+				};
+			};
+			
+		</script>
+			
+	
+	</head>
+	
+	<body>
+		<div id="registerHeader">
+			<span id="back" ><img src="img/back_2.png"/></span>
+			<a href="help.html"><span id="registerHelp"><img src="img/help.png"/></span></a>
+		</div>
+		
+		<div id="registerPhone">
+			<label>验证码
+				<input type="text" name="registerPhone" maxlength="5" placeholder="请输入验证码" />
+			</label>
+		</div>
+		<div id="sendAgain">
+			<a href="#">重新发送</a>
+		</div>
+		
+		<div id="registerButton">
+			<a href="#">提交</a>
+		</div>
+	</body>
+</html>

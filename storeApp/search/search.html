@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/search/search.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function()
+			{
+				var bodyWH=getWH();
+				setTargetWidth("#searchHeader",bodyWH.width+"px");
+			 	setTargetWidth("#searchForm",bodyWH.width-100+"px");
+			 	setTargetWidth("#searchFamily",bodyWH.width+"px");
+			 	//给返回按钮绑定单击响应函数
+			 	Qselect("#back").onclick=function(){
+			 		history.back();
+			 	};
+			}
+		</script>
+	</head>
+	<body>
+		<div id="searchHeader">
+			<span id="back"><img src="../img/back_5.png"/></span>
+			<form action="../goodsManger/goodsList.html" method="post" id="searchForm">	
+				<input type="search" name="searchGoods" id="searchGoods" autofocus="autofocus"/>
+			</form>
+			<a href="../message/message.html" id="message">
+				<img src="../img/message/message1.png"/>
+			</a>
+		</div>
+		<div id="searchFamily">
+			
+			<ul>
+				<li><a href="#">全部</a></li>
+				<li><a href="#">店铺</a></li>
+				<li><a href="#">历史记录</a></li>
+			</ul>
+			
+			<div id="selectPosition"></div>
+			
+		</div>
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				//给back添加一个单击响应函数
+				Qselect("#back").onclick=function(){
+					history.back();
+				};	
+			};
+		</script>
+		
+	</head>
+	<body>
+		<div id="registerHeader">
+			<span id="back"><img src="img/back_2.png"/></span>
+			<a href="help.html"><span id="registerHelp"><img src="img/help.png"/></span></a>
+		</div>
+		<div id="registerPhone">
+			<label>手机号
+				<input type="text" name="registerPhone" maxlength="11" placeholder="请输入手机号" />
+			</label>
+		</div>
+		<div id="registerAgree">
+			<p>已阅读并同意本平台相关政策</p>
+			<a href="#"><cite>《xxx》</cite></a>
+			<a href="#"><cite>《yyy》</cite></a>
+		</div>
+		
+		<div id="registerButton">
+			<a href="regester2.html">同意协议并注册</a>
+		</div>
+	</body>
+</html>

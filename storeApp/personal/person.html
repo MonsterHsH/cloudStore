@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/personal/person.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function()
+			{
+				var bodyWH=getWH(); 
+				setTargetWidth("#outer",bodyWH.width+"px");
+			}	
+		</script>
+		
+	</head>
+	<body>
+		<div id="outer">
+			<div id="personHeader">
+				<a href="personInfomation.html" id="personSet"><img src="../img/person/set.png"/></a>
+				<a href="../message/message.html" id="goToMessage"><img src="../img/message/message1.png"/></a>
+				<div id="photo">
+					<img src="../img/person/Master-Shifu-icon.png" alt="头像" />
+				</div>
+				<div id="myPointsAndNickName">
+					<p id="myNickName">昵称:&nbsp;&nbsp;<span>熊猫灬拽拽</span></p>	
+					<p id="myPoints">&nbsp;&nbsp;<span>11524</span></p>
+				</div>
+			</div>
+		 
+			<div id="allOrder">
+				<div id="order">
+					<span id="orderSpan">我的订单</span>
+					<a href="../orders/allOrders.html" id="orderA">查看所有订单 <img src="../img/person/go.png" alt="go!"/></a>
+				</div>
+				<div id="waitDiv">
+					<a href="../orders/allOrders.html" id="waitPay"><img src="../img/person/waitPay.png" class="functionEntry"/>&nbsp;&nbsp;待付款 <span class="goodsCount">1</span></a>
+					<a href="../orders/allOrders.html" id="waitReceive"><img src="../img/person/waitReceive.png" class="functionEntry"/>&nbsp;&nbsp;待收货<span class="goodsCount">1</span></a>
+					<a href="../orders/allOrders.html" id="waitSend"><img src="../img/person/waitSendGoods.png" class="functionEntry"/>&nbsp;&nbsp;待发货<span class="goodsCount">1</span></a>
+					<a href="../orders/allOrders.html" id="waitEvaluate"><img src="../img/person/valuate.png" class="functionEntry"/>&nbsp;&nbsp;待评价<span class="goodsCount">1</span></a>
+				</div>
+			</div>
+			<div id="myPlace">
+					<p>个人中心</p>
+					<a href="../store/myStore.html" id="myStore"><img src="../img/person/store.png" class="functionEntry"/>&nbsp;&nbsp;我的店铺</a>
+					<a href="countManager.html" id="countManager"><img src="../img/person/count.png" class="functionEntry"/>&nbsp;&nbsp;账户管理</a>
+					<a href="publishGoods.html" id="publishGoods"><img src="../img/person/goods.png" class="functionEntry"/>&nbsp;&nbsp;商品发布</a>
+					<a href="scanRecords.html" id="scanRecords"><img src="../img/person/footplace.png" class="functionEntry"/>&nbsp;&nbsp;浏览记录</a>
+					<a href="collectStore.html" id="collectionStore"><img src="../img/person/collection.png" class="functionEntry"/>&nbsp;&nbsp;店铺收藏</a>
+					<a href="evaluateManager.html" id="evaluateManager"><img src="../img/person/afterBuy.png" class="functionEntry"/>&nbsp;&nbsp;售后/退货</a>
+			</div>
+		</div>
+	<div id="footer">
+		<a href="../index.html" id="home"></a>
+		<a href="../trolley/trolley.html" id="trolley"></a>
+		<a href="#" id="person"></a>
+	</div>
+	</body>
+</html>

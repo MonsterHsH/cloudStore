@@ -1,0 +1,168 @@
+body {
+	overflow: hidden;
+}
+
+#header {
+	height: 70px;
+	position: fixed;
+	top: 0;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+}
+
+#topMenu {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: red;
+	position: relative;
+}
+
+#back {
+	position: absolute;
+	top: 0px;
+	left: 10px;
+}
+
+#search {
+	display: block;
+	width: 240px;
+	height: 24px;
+	background-color: white;
+	line-height: 24px;
+	font-size: 14px;
+	margin: auto;
+	position: relative;
+	top: 8px;
+	text-indent: 10px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#message {
+	position: absolute;
+	right: 20px;
+	top: 5px;
+}
+
+#rangMenu {
+	width: 100%;
+	height: 30px;
+	background-color: #FF6633;
+	color: white;
+	font-weight: bold;
+}
+
+#allGoods,
+#salesVolume,
+#pricePriority {
+	display: inline-block;
+	width: 32%;
+	line-height: 30px;
+	text-align: center;
+}
+
+#selectBy {
+	display: block;
+	width: 32%;
+	height: 28px;
+	position: relative;
+	top: -30px;
+	left: 0;
+	border-bottom: 3px solid yellow;
+}
+
+#goodsList:before {
+	content: "";
+	height: 75px;
+	display: block;
+}
+
+#goodsList {
+	height: 1000px;
+}
+
+.goods {
+	height: 90px;
+	width: 100%;
+	position: relative;
+	background-color: #F2F2F2;
+	font-size: 12px;
+	margin-top: 3px;
+}
+
+.goodsPicture {
+	display: block;
+	height: 80px;
+	width: 90px;
+	position: relative;
+	top: 5px;
+	left: 2px;
+	background-image: url(../../img/trolley/timg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+.isNewGoods {
+	position: absolute;
+	top: 8px;
+	left: 92px;
+	display: inline-block;
+	width: 35px;
+	height: 14px;
+	font-size: 12px;
+	background-color: red;
+	border-radius: 0 10px 10px 0;
+	line-height: 14px;
+	color: white;
+	text-indent: 3px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.goodsTitle {
+	display: block;
+	height: 40px;
+	line-height: 20px;
+	position: absolute;
+	top: 5px;
+	left: 100px;
+	text-indent: 30px;
+	overflow: hidden;
+}
+
+.goodsType {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+.goodsPrice {
+	position: absolute;
+	top: 50px;
+	right: 10px;
+	color: red;
+}
+
+.salesVolume {
+	position: absolute;
+	top: 70px;
+	right: 10px;
+}
+
+.storeName {
+	position: absolute;
+	bottom: 5px;
+	left: 100px;
+	color: orange;
+}
+
+.storeName img {
+	position: relative;
+	top: 3px;
+}

@@ -1,0 +1,203 @@
+body {
+	overflow: hidden !important;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#header {
+	height: 70px;
+	position: fixed;
+	top: 0;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+}
+#header #topMenu{
+	width: 100%;
+	height: 40px;
+	background-color: red;
+}
+#header #topMenu li {
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	font-weight: bold;
+}
+#header ul #back {
+	text-align: left;
+}
+
+#header ul #back img {
+	margin: 8px 0 0 10px;
+}
+
+#header ul #message {
+	text-align: right;
+}
+
+#header ul #message img {
+	margin: 8px 15px 0 0;
+}
+
+#orderInfo{
+	margin-top: 50px;
+}
+#orderInfo>p{
+	margin: 5px 0 5px 10px;
+	font-size: 12px;
+}
+#customerInfo{
+	height: 90px;
+	font-size: 12px;
+	line-height: 16px;
+	position: relative;
+	border: 1px solid #F2F2F2;
+	box-sizing: border-box;
+}
+#customerInfo img{
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 20px;
+}
+#receiver,#phone,#address{
+	position: absolute;
+	left: 60px;
+}
+#receiver{
+	top: 10px;
+	height: 20px;
+}
+#phone{
+	top: 30px;
+	height: 20px;
+}
+#address{
+	line-height: 16px;
+	top: 50px;
+}
+#goodsDetails{
+	width: 100%;
+	border-bottom: 1px solid #F2F2F2;
+}
+.storeTitle {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+.storeName{
+	float: left;
+	margin: 0 0 0 10px;
+}
+.storeTitle span{
+	color: red;
+	font-size: 12px;
+	float: right;
+	margin-right: 10px;
+}
+
+.goodsList {
+	width: 100%;
+}
+
+.goods {
+	position: relative;
+	width: 100%;
+	height: 90px;
+	margin: 2px auto;
+	background-color: #F2F2F2;
+	font-size: 12px;
+}
+.goodsPicture {
+	width: 90px;
+	height: 80px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.isNewGoods{
+	display: block;
+	position: absolute;
+	top: 6px;
+	left: 95px;
+	background-color:#FF3366;
+	font-size: 13px;
+	width: 35px;
+	height: 15px;
+	text-indent: 2px;
+	line-height: 15px;
+	border-radius:0 8px 8px 0;
+	color: white;
+}
+.goodsTitle {
+	position: absolute;
+	left: 105px;
+	top: 5px;
+	height: 36px;
+	line-height: 18px;
+	text-indent: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.goodsType{
+	position: absolute;
+	top: 45px;
+	left: 105px;
+}
+.goodsPrice {
+	position: absolute;
+	bottom: 10px;
+	left: 105px;
+	font-size: 18px;
+	font-weight: bold;
+	color: red;
+}
+.counts{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.service,.cancel,.goToPay,.confirm,.goToEva,.delete{
+	float: right;
+	margin-right: 10px;
+	display: inline-block;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #868686; 
+	border-radius:15px;
+	margin-top: 5px;
+	text-align: center;
+	width: 85px;
+}
+#goodsDetails:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	margin-bottom: 10px;
+}
+#otherInfo{
+	margin-top: 10px;
+}
+#otherInfo>p{
+	margin: 15px 0 0 10px;
+}
+#postage span,#shouldPay span{
+	float: right;
+	margin-right: 20px;
+	color: red;
+	font-size: 18px;
+}
+#chatWithSeller span,#sellerPhone span{
+	position: relative;
+	top: -10px;
+	left: 10px;
+}
+

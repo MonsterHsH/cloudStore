@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/store/regeisterStore.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var bodyWH=getWH();
+				setTargetWidth("#header",bodyWH.width+"px");
+				setTargetWidth("table",bodyWH.width+"px");
+				setTargetHeight("#addAddress",bodyWH.height-40+"px");
+				setTargetWidth("#addAddress",bodyWH.width+"px");
+				//给返回按钮绑定单击响应函数
+				Qselect("#back").onclick=function(){
+					history.back();
+				};
+			
+			};
+		</script>
+	</head>
+	<body>
+		<header id="header">
+			<span id="back"><img src="../img/back_5.png"/></span>
+			<span id="title">店铺注册</span>
+			<span id="menu"><img src="../img/person/menu.png"/></span>
+		</header>
+		<div id="photo">
+			<img src="../img/person/Master-Shifu-icon.png"/>
+			<button>添加logo</button>
+		</div>
+		<form action="#" method="post">
+			<table>
+				<tr>
+					<td id="storeName">
+						店名：
+						<input type="text" name="storeName" value="" placeholder="请输入店铺名" required="required"/>
+					</td>
+				</tr>
+				<tr>
+					<td id="name">
+						姓名：
+						<input type="text" name="name" value="" placeholder="请输入您的姓名" required="required"/>
+					</td>
+				</tr>
+				<tr>
+					<td id="phone">
+						联系方式：
+						<input type="tel" name="phone" value="" placeholder="请留下您的联系方式" required="required" maxlength="11"/>
+					</td>
+				</tr>
+				<tr>
+					<td id="IDcard">
+						身份证：
+						<input type="tel" name="idcard" value="" placeholder="请输入身份证号码" required="required" maxlength="18"/>
+					</td>
+				</tr>
+				<tr>
+					<td id="address">
+						地址：
+						<input type="tel" name="address" value="" placeholder="点击输入您的地址" required="required"/>
+					</td>
+				</tr>
+				<tr>
+					<td id="school">
+						学校：
+						<input type="text" name="school" value="" placeholder="请输入您的学校" required="required"/>
+					</td>
+				</tr>
+				<tr>
+					<td id="description">
+						店铺描述：
+						<input type="text" name="description" value="" placeholder="给您的店铺来点个性的标签吧" maxlength="48" />
+					</td>
+				</tr>
+				<tr>
+					<td id="IDcardFront">
+						身份证正面：
+						<label><input type="file" name="IDcardFront" required="required"/><span>请上传身份证正面照片</span></label>
+					</td>
+				</tr>
+				<tr>
+					<td id="IDcardBack">
+						身份证反面：
+						<label><input type="file" name="IDcardBack" required="required"/><span>请上传身份证反面照片</span></label>
+					</td>
+				</tr>
+			</table>
+			<button type="submit" id="submit">提&nbsp;&nbsp;&nbsp;交</button>
+		</form>
+		<div id="addAddress">
+			<div id="province">
+				<p>省</p>
+			</div>
+			<div id="city">
+				<p>市</p>
+			</div>
+			<div id="county">
+				<p>县</p>
+			</div>
+			<div id="镇">
+				<p>镇</p>
+			</div>
+			<div id="detailsAddress"></div>
+		</div>
+
+	</body>
+</html>

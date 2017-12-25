@@ -1,0 +1,79 @@
+body {
+	background: whitesmoke;
+	overflow: hidden;
+}
+
+#searchHeader {
+	height: 45px;
+	background-color: #FF0000;
+	position: relative;
+}
+
+#back {
+	position: absolute;
+	left: 15px;
+	top: 13px;
+}
+
+#searchForm {
+	height: 40px;
+	border-bottom: 2px solid white;
+	margin: 0 auto 0;
+	position: relative;
+}
+
+input {
+	height: 30px;
+	margin: 10px 0 0;
+	width: 100%;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: white;
+}
+
+#message {
+	position: absolute;
+	right: 15px;
+	top: 13px;
+}
+
+#searchFamily {
+	background-color: #FF6633;
+	height: 36px;
+	position: relative;
+}
+
+ul {
+	list-style-type: none;
+	width: 100%;
+	margin: auto;
+}
+
+ul a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	height: 36px;
+	width: 100%;
+}
+
+li {
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	width: 33.3%;
+	text-align: center;
+}
+
+#selectPosition {
+	height: 36px;
+	width: 33.3%;
+	border-bottom: 3px solid yellow;
+	position: absolute;
+	left: 33.3%;
+	bottom: 0;
+}

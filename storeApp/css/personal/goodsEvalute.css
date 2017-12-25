@@ -1,0 +1,136 @@
+body {
+	overflow: hidden !important;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+#header {
+	height: 40px;
+	position: fixed;
+	top: 0;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+	background-color: red;
+}
+#header span,#header a{
+	display: block;
+	height: 40px;
+	width: 33.3%;
+	line-height: 40px;
+	float: left;
+	color: white;
+	font-weight: bold;
+}
+#title{
+	text-align: center;
+}
+#header #back {
+	text-align: left;
+}
+#back img {
+	margin: 8px 0 0 10px;
+}
+.goodsList {
+	margin-top:40px;
+}
+
+.goods {
+	position: relative;
+	width: 100%;
+	height: 90px;
+	margin: 2px auto;
+	background-color: #F2F2F2;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+.goodsPicture {
+	width: 90px;
+	height: 80px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.isNewGoods{
+	display: block;
+	position: absolute;
+	top: 6px;
+	left: 95px;
+	background-color:#FF3366;
+	font-size: 13px;
+	width: 35px;
+	height: 15px;
+	text-indent: 2px;
+	line-height: 15px;
+	border-radius:0 8px 8px 0;
+	color: white;
+}
+.goodsTitle {
+	position: absolute;
+	left: 95px;
+	top: 5px;
+	height: 36px;
+	line-height: 18px;
+	text-indent: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 10px;
+}
+.goodsType{
+	position: absolute;
+	top: 45px;
+	left: 105px;
+}
+.goodsPrice {
+	position: absolute;
+	bottom: 10px;
+	left: 105px;
+	font-size: 18px;
+	font-weight: bold;
+	color: red;
+}
+.counts{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+#evaCount{
+	margin: 10px;
+}
+#evaCount span{
+	position: relative;
+	top: -5px;
+	margin-right: 10px;
+}
+#evaCount img{
+	height: 24px;
+	width: 24px;
+	
+}
+#evaCount input{
+	display: none;
+}
+#eva p{
+	margin: 0 10px;
+}
+#eva textarea{
+	border: 1px solid #E4E4E4;
+	margin: 0 10px;
+	text-indent: 2em;
+	resize: none;
+	box-sizing: border-box;
+}
+#eva button{
+	border: none;
+	outline: none;
+	background-color: #FF6633;
+	display: block;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	color: white;
+	border-radius: 20px;
+	margin: 20px auto;
+}
