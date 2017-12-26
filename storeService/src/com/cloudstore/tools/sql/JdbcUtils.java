@@ -1,4 +1,4 @@
-package com.cloudstore.sql.tools;
+package com.cloudstore.tools.sql;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -20,7 +20,6 @@ public class JdbcUtils
 	public static Connection getConnection() throws SQLException
 	{
 		return cloudStore.getConnection();
-		
 	}
 	/**
 	 * 释放连接
