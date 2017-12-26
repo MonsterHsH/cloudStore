@@ -76,7 +76,7 @@ a {
 #orderBody>ul{
 	position: relative;
 	transition:left 0.3s linear;
-	-webkit-transition: left 0.3s linear;
+	-webkit-transition: 0.3s linear;
 }
 #orderBody>ul>li{
 	float: left;

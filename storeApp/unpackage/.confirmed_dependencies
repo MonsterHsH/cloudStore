@@ -284,5 +284,10 @@
 		"refer": [
 			"store/storeList.html"
 		]
+	},
+	"personal/goodsEvalute.html": {
+		"refer": [
+			"orders/orderDetails.html"
+		]
 	}
 }

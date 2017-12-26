@@ -44,18 +44,20 @@ function setTargetWidth(selectorName,width)
 /*
  * 元素选择器
  */
-function Qselect(name)
-{
-	var target=document.querySelectorAll(name);
-	if(target!==null){
-		if(target.length>1){
+function Qselect(name) {
+	var target = document.querySelectorAll(name);    //鑾峰彇鎵�鏈夌鍚堣閫夋嫨鍣ㄧ殑鍏冪礌
+	if (target !== null) {                              
+		if (target.length > 1) {                      //鑻ユ湁澶氫釜锛屽垯杩斿洖鏁扮粍
 			return target;
-		}
-		else{ 
-			var target2=target[0];
-			target2.length=1;
-			return target2;
 		} 
+		else if(target.length==1) {                //鑻ュ彧鏈変竴涓紝杩斿洖绗竴涓� 
+			var target2 = target[0];
+			target2.length = 1;
+			return target2;
+		}
+		else{
+			return null;
+		}
 	}
 	return null;
 };
@@ -70,6 +72,7 @@ function createElement(elementName){
  * icon     轮播图中标识符元素（list）
  * width    轮播图外层div宽度
  * autoChange  是否开启自动播放
+ * time 播放时间间隔
  */
 //轮播图索引
 function AppTouch(slider,icon,pointDiv,Width,auto,time)
@@ -209,5 +212,25 @@ function AppTouch(slider,icon,pointDiv,Width,auto,time)
 		icon[index].className="solidPoint";
 		slider.style.left=-index*Width+"px";
 	}
-	
+};
+/**
+ * 异步发送请求
+ * @param {Object} callBack
+ * @param {Object} data
+ * @param {Object} url
+ */
+function asyRequest(callBack,data,url){
+	var request = new XMLHttpRequest();           
+	method="POST";
+	request.open(method, url, true);         
+	request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");   
+	request.send(data);              
+	request.onreadystatechange = function(){
+		if(request.readyState == 4) {
+			if(request.status == 200 || request.status == 304) {
+				var recive=request.responseText;
+				callBack(recive);
+			}
+		}	
+	};
 };

@@ -1,5 +1,7 @@
 window.onload = function() {
 	var bodyWH = getWH();
+	var goodEvaCount;    //好评分数
+	var stars=document.getElementById("evaCount").getElementsByTagName("input");//获取表示星星的元素
 	setTargetWidth("#header", bodyWH.width + "px");
 	setTargetWidth(".goodsList", bodyWH.width + "px");
 	setTargetWidth("#eva textarea", bodyWH.width - 20 + "px");
@@ -7,39 +9,35 @@ window.onload = function() {
 	Qselect("#back").onclick = function() {
 		history.back();
 	};
-	//获取星星的个数
-	var count=0;
-	getStarsCount();
-
-	/*获取评价的星星数量*/
-	function getStarsCount(){
-		//获取评价的星星的元素
-		var stars=Qselect("#evaCount input");
+	//给每个星星绑定单击事件
+	for(var i=0;i<stars.length;i++){
+		var star=stars[i];
+		star.num=i;
+		//当单击星星时，将该星星以及前边的星星全部变为彩色，并将checked属性改为true
+		//将后面的星星变成灰色，checked属性变为false
+		star.onclick=function(event){
+			var target=event.target;
+			for(var j=0;j<target.num+1;j++){
+				stars[j].checked=true;
+				stars[j].previousSibling.src = "../img/person/goodeva.png";
+			}
+			for(;j<stars.length;j++){
+					stars[j].checked=false;
+					stars[j].previousSibling.src = "../img/person/badeva.png";
+			}
+		};
+	}
+	//获取好评数
+	function getEvaCount(){
 		for(var i=0;i<stars.length;i++){
-			stars[i].num=i;
-			//为星星绑定单击事件
-			stars[i].onclick=function(event){
-				var target=event.target;
-				for(var j=0;j<stars.length;j++){
-					if(stars[j].num<=target.num){
-						stars[j].checked = true;
-						stars[j].previousSibling.src = "../img/person/goodeva.png";	
-					}else{
-						stars[j].checked = false;
-						stars[j].previousSibling.src = "../img/person/badeva.png";	
-					}
-				}
-				count=target.num+1;
-			};
+			if(stars[i].checked==false){
+				return i;
+			}
 		}
+		return i;
 	};
-
-//if(target.checked) {
-//	for(var j = 0; j < i; j++) {
-//		stars[j].checked = true;
-//		stars[j].previousSibling.src = "../img/person/goodeva.png";
-//	}
-//}
+	goodEvaCount=getEvaCount();        //获取好评的星星的个数
+	
 
 
 

@@ -526,6 +526,13 @@
 					"store/storeList.html"
 				],
 				"priority": 0
+			},
+			"personal/goodsEvalute.html": {
+				"resources": [],
+				"refer": [
+					"orders/orderDetails.html"
+				],
+				"priority": 0
 			}
 		},
 		"idle": {

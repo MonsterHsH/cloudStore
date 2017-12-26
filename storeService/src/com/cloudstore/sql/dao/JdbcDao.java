@@ -11,6 +11,7 @@ import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ColumnListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 import com.cloudstore.tools.sql.JdbcUtils;
+
 /**
  * 该类实现了对数据库的增删改查操作，包括获取数据库对象中的一条数据，多条数据，
  * 某个字段的值，可以逐条操作，也可以批量操作
@@ -21,7 +22,6 @@ public class JdbcDao<T> implements DAO<T>
 {
 	private QueryRunner qr=new QueryRunner();      //数据库增删改查工具类
 	private Class<T> clazz;
-	
 	@SuppressWarnings("unchecked")
 	public JdbcDao()
 	{

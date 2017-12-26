@@ -1,5 +1,4 @@
 window.onload=function(){
-	alert("hello!");
 	var bodyWH = getWH();
 	//屏幕自适应
 	setTargetWidth("#outer", bodyWH.width + "px");
@@ -9,8 +8,7 @@ window.onload=function(){
 	setTargetWidth("#carouselFigure", bodyWH.width + "px");
 	setTargetWidth("#functionEntry", bodyWH.width + "px");
 	setTargetWidth("#goodsScan", bodyWH.width + "px")
-	setTargetWidth("#slider li",bodyWH.width+"px");
-	   
+	setTargetWidth("#slider li",bodyWH.width+"px"); 
 	//轮播图处理
 	var slider = Qselect("#slider"); 
 	var pointDiv = Qselect("#pointDiv");	                            //设置轮播图中的存放点的DIV点
@@ -21,19 +19,21 @@ window.onload=function(){
 	Qselect("#studentStore").onclick=function(){
 		 window.location.href = "store/storeList.html";
 	};
-	
+	//给二手交易菜单绑定事件
 	Qselect("#oldGoods").onclick=function(){
 		 window.location.href = "goodsManger/goodsList.html";
 		 
 		 //向下一个页面提供请求二手交易的信息
 	};
-	
+	//给失物招领绑定事件
 	Qselect("#lostAndFound").onclick=function(){
-		 window.location.href="lostAndFound/lostAndFound.html";
+//		 window.location.href="lostAndFound/lostAndFound.html";
+		alert("该功能站未开通！");
 	};
-	
+	//给共享交易绑定事件
 	Qselect("#shareTrading").onclick=function(){
-		 window.location.href = "shareTrading/shareTrading.html";
+//		 /window.location.href = "shareTrading/shareTrading.html";
+		alert("该功能暂未开通！");
 		
 	};
 	
@@ -58,7 +58,7 @@ window.onload=function(){
 		goods[i].onclick=scanGoods;
 	}
 	
-	//给事件添加的单击响应函数
+	//给商品添加的单击响应函数
 	function scanGoods(event){
 		var target=event.target;
 		var id=target.id;
