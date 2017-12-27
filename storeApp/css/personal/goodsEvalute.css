@@ -113,9 +113,18 @@ a {
 #eva p{
 	margin: 0 10px;
 }
+#badEva,#generalEva,#goodEva{
+	font-size: 12px;
+}
+#eva img{ 
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 10px;
+}
 #eva textarea{
 	border: 1px solid #E4E4E4;
-	margin: 0 10px;
+	margin: 10px 10px;
 	text-indent: 2em;
 	resize: none;
 	box-sizing: border-box;

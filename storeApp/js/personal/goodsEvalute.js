@@ -1,7 +1,6 @@
 window.onload = function() {
 	var bodyWH = getWH();
 	var goodEvaCount;    //好评分数
-	var stars=document.getElementById("evaCount").getElementsByTagName("input");//获取表示星星的元素
 	setTargetWidth("#header", bodyWH.width + "px");
 	setTargetWidth(".goodsList", bodyWH.width + "px");
 	setTargetWidth("#eva textarea", bodyWH.width - 20 + "px");
@@ -9,34 +8,52 @@ window.onload = function() {
 	Qselect("#back").onclick = function() {
 		history.back();
 	};
-	//给每个星星绑定单击事件
-	for(var i=0;i<stars.length;i++){
-		var star=stars[i];
-		star.num=i;
-		//当单击星星时，将该星星以及前边的星星全部变为彩色，并将checked属性改为true
-		//将后面的星星变成灰色，checked属性变为false
-		star.onclick=function(event){
-			var target=event.target;
-			for(var j=0;j<target.num+1;j++){
-				stars[j].checked=true;
-				stars[j].previousSibling.src = "../img/person/goodeva.png";
-			}
-			for(;j<stars.length;j++){
-					stars[j].checked=false;
-					stars[j].previousSibling.src = "../img/person/badeva.png";
-			}
-		};
-	}
-	//获取好评数
-	function getEvaCount(){
-		for(var i=0;i<stars.length;i++){
-			if(stars[i].checked==false){
-				return i;
-			}
-		}
-		return i;
-	};
-	goodEvaCount=getEvaCount();        //获取好评的星星的个数
+	//给评价绑定单击事件
+	document.getElementById("badEva").addEventListener("click",function(event){
+		event.preventDefault();           
+		event.stopPropagation();
+		var target=event.target.parentNode;
+		var image=target.getElementsByTagName("img")[0];
+		var check=target.getElementsByTagName("input")[0];
+		image.src="../img/person/eva3.png";
+		check.checked=true;
+		document.getElementById("generalEva").getElementsByTagName("img")[0].src="../img/person/eva4.png";
+		document.getElementById("goodEva").getElementsByTagName("img")[0].src="../img/person/eva4.png";
+		document.getElementById("generalEva").getElementsByTagName("input")[0].checked=false;
+		document.getElementById("goodEva").getElementsByTagName("input")[0].checked=false;
+		goodEvaCount=-1;
+	},true);
+	document.getElementById("generalEva").addEventListener("click",function(event){
+		event.preventDefault();           
+		event.stopPropagation();
+		var target=event.target.parentNode;
+		var image=target.getElementsByTagName("img")[0];
+		var check=target.getElementsByTagName("input")[0];
+		image.src="../img/person/eva2.png";
+		check.checked=true;
+		document.getElementById("badEva").getElementsByTagName("img")[0].src="../img/person/eva4.png";
+		document.getElementById("goodEva").getElementsByTagName("img")[0].src="../img/person/eva4.png";
+		document.getElementById("badEva").getElementsByTagName("input")[0].checked=false;
+		document.getElementById("goodEva").getElementsByTagName("input")[0].checked=false;
+		goodEvaCount=0;
+	},true);
+	document.getElementById("goodEva").addEventListener("click",function(event){
+		event.preventDefault();           
+		event.stopPropagation();
+		var target=event.target.parentNode;
+		var image=target.getElementsByTagName("img")[0];
+		var check=target.getElementsByTagName("input")[0];
+		image.src="../img/person/eva1.png";
+		check.checked=true;
+		document.getElementById("badEva").getElementsByTagName("img")[0].src="../img/person/eva4.png";
+		document.getElementById("generalEva").getElementsByTagName("img")[0].src="../img/person/eva4.png";
+		document.getElementById("badEva").getElementsByTagName("input")[0].checked=false;
+		document.getElementById("generalEva").getElementsByTagName("input")[0].checked=false;
+		goodEvaCount=1;
+	},true);
+	
+	
+
 	
 
 
