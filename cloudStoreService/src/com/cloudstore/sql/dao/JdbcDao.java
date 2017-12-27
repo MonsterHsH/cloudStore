@@ -10,25 +10,23 @@ import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ColumnListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
-
 import com.cloudstore.tools.sql.JdbcUtils;
 
 
 /**
- * 璇ョ被瀹炵幇浜嗗鏁版嵁搴撶殑澧炲垹鏀规煡鎿嶄綔锛屽寘鎷幏鍙栨暟鎹簱瀵硅薄涓殑涓�鏉℃暟鎹紝澶氭潯鏁版嵁锛�
- * 鏌愪釜瀛楁鐨勫�硷紝鍙互閫愭潯鎿嶄綔锛屼篃鍙互鎵归噺鎿嶄綔
+ * 实现对数据库的增删改查操作
  * @author panda
- * @param <T>  瀹炵幇璇ョ被鐨勫瓙绫诲搴旂殑琛ㄦ垨瑙嗗浘绫�
+ * @param <T>  子类的泛型类型
  */
 public class JdbcDao<T> implements DAO<T>
 {
-	private QueryRunner qr=new QueryRunner();      //鏁版嵁搴撳鍒犳敼鏌ュ伐鍏风被
+	private QueryRunner qr=new QueryRunner();      //数据库操作类
 	private Class<T> clazz;
 	@SuppressWarnings("unchecked")
 	public JdbcDao()
 	{
 		Type superClass =getClass().getGenericSuperclass();
-		//鑾峰彇杩愯鏃剁被鐨勬硾鍨�
+		//获取T的类型
 		if(superClass instanceof ParameterizedType)
 		{
 			ParameterizedType paramType=(ParameterizedType)superClass;
@@ -43,7 +41,7 @@ public class JdbcDao<T> implements DAO<T>
 		}
 	}
 	/**
-	 * update delete insert鎿嶄綔
+	 * update delete insert操作
 	 * @throws SQLException
 	 */
 	@Override
@@ -57,7 +55,7 @@ public class JdbcDao<T> implements DAO<T>
 	}
 	
 	/**
-	 * 鎵归噺澶勭悊锛寀pdate delete insert
+	 * 批量处理    update delete insert
 	 * @param conn
 	 * @param sql
 	 * @param obj
@@ -75,7 +73,7 @@ public class JdbcDao<T> implements DAO<T>
 		}
 	}
 	/**
-	 * 鑾峰彇涓�鏉¤褰曠殑鏌愪釜瀛楁鐨勫��
+	 *获取一个值
 	 * @throws SQLException 
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
@@ -89,7 +87,7 @@ public class JdbcDao<T> implements DAO<T>
 	}
 
 	/**
-	 * 鑾峰彇缁撴灉闆�
+	 *获取一组记录
 	 * @throws SQLException 
 	 */
 	@Override
@@ -102,7 +100,7 @@ public class JdbcDao<T> implements DAO<T>
 		}
 	}
 	/**
-	 * 鑾峰彇涓�鏉＄粨鏋�
+	 * 获取一条记录
 	 * @throws SQLException 
 	 */
 	@Override
@@ -116,7 +114,7 @@ public class JdbcDao<T> implements DAO<T>
 	}
 	
 	/**
-	 * 鑾峰彇鏌愪竴鍒楃殑鍊�
+	 * 获取一列值
 	 */
 	@Override
 	public <E> List<E> getValueList(Connection conn, String sql, Object... args) throws SQLException {
