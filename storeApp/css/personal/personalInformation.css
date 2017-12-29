@@ -1,0 +1,82 @@
+body {
+	overflow: hidden !important;
+	background-color: #F2F2F2;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#header {
+	height: 40px;
+	position: fixed;
+	top: 0;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+	background-color: red;
+}
+#header span,#header a{
+	display: block;
+	height: 40px;
+	width: 33.3%;
+	line-height: 40px;
+	float: left;
+	color: white;
+	font-weight: bold;
+}
+#title{
+	text-align: center;
+}
+#header #back {
+	text-align: left;
+}
+#back img {
+	margin: 8px 0 0 10px;
+}
+#menu {
+	text-align: right;
+}
+#menu img {
+	margin: 4px 5px 0 0;
+}
+#header:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+#photo{
+	height: 80px;
+	width: 80px;
+	margin:85px auto 0;
+}
+#photo img{
+	width: 75px;
+	height: 75px;
+	border-radius: 75px;
+	background-color:white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+table{
+	margin-top:40px ;
+	text-align: left;
+	border: 1;
+}
+td{
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+	text-indent: 10px;
+}
+#birth{
+	width: 50%;
+	border-right:1px solid #E4E4E4;
+}
+#sex{
+	width: 50%;
+	text-align: center;
+}

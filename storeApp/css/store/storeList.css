@@ -1,0 +1,96 @@
+body {
+	overflow: hidden !important;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#header {
+	height: 40px;
+	position: fixed;
+	top: 0;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+	background-color: red;
+}
+#header span,#header a{
+	display: block;
+	height: 40px;
+	width: 33.3%;
+	line-height: 40px;
+	float: left;
+	color: white;
+	font-weight: bold;
+}
+#title{
+	text-align: center;
+}
+#header #back {
+	text-align: left;
+}
+#back img {
+	margin: 8px 0 0 10px;
+}
+
+#menu{
+	text-align: right;
+}
+#menu img {
+	margin: 8px 15px 0 0;
+	width: 24px;
+	height: 24px;
+}
+#storeList:before{
+	content: "";
+	height: 45px;
+	display: block;
+}
+#storeList>ul>li{
+	width: 100%;
+	height: 90px;
+	background-color:#F2F2F2;
+	margin-top: 2px;
+	box-sizing: border-box;
+	position: relative;
+}
+.storeLogo{
+	width: 90px;
+	height: 80px;
+	margin: 5px 2px;
+}
+.storeName{
+	font-size: 14px;
+	position: absolute;
+	top: 15px;
+	left: 105px;
+}
+.type{
+	font-size: 12px;
+	position: absolute;
+	top: 35px;
+	left: 105px;
+}
+.type li{
+	float: left;
+	margin: 0 2px;
+}
+.storePoint{
+	font-size: 14px;
+	position: absolute;
+	top: 55px;
+	left: 105px;
+}
+.storePoint img{
+	width: 20px;
+	height: 20px;
+}
+.storePoint span{
+	position: relative;
+	top: -2px;
+	line-height: 12px;
+}
+.storePoint span i{
+	position: relative;
+	top: -2px;
+}

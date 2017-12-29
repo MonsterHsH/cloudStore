@@ -1,0 +1,89 @@
+body {
+	overflow: hidden !important;
+	background-color: #F2F2F2;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+#header {
+	height: 40px;
+	position: fixed;
+	top: 0;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+	background-color: red;
+}
+#header span{
+	display: block;
+	height: 40px;
+	width: 33.3%;
+	line-height: 40px;
+	float: left;
+	color: white;
+	font-weight: bold;
+}
+#title{
+	text-align: center;
+}
+#header #back {
+	text-align: left;
+}
+#back img {
+	margin: 8px 0 0 10px;
+}
+#header:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+table{
+	margin-top: 40px;
+	box-sizing: border-box;
+}
+tr{
+	width: 100%;
+}
+td{
+	width: 100%;
+}
+td a,td button{
+	width: 100%;
+	display: inline-block;
+}
+td{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #E4E4E4;
+	padding-left: 10px;
+}
+button{
+	border:none;
+	outline: none;
+	display: block;
+}
+#clear button{
+	background-color:#F2F2F2;
+	text-align: left;
+	font-size: 16px;
+	position: relative;
+	left: -6px;
+}
+#exit{
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	position: absolute;
+	bottom: 100px;
+}
+#exit button{
+	margin: 0 auto;
+	width: 150px;
+	height: 40px;
+	background-color: #FF6633;
+	border-radius: 20px;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+}

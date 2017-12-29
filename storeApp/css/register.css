@@ -1,0 +1,73 @@
+a {
+	text-decoration: none;
+}
+#registerHeader {
+	margin: 20px 0 15px;
+	height: 16px;
+	position: relative;
+}
+#back {
+	position: absolute;
+	left: 10px;
+	z-index: 999;
+}
+#registerHelp {
+	position: absolute;
+	right: 20px;
+}
+#register{
+	position: relative;
+}
+label{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	position: relative;
+}
+#registerPhone,#checkNumber {
+	border-top: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+	text-indent: 5px;
+}
+#checkNumber{
+	border-top: none;
+}
+input {
+	border: none;
+	outline: none;
+	height: 28px;
+	width: 150px;
+	text-indent: 1em;
+	font-size: 14px;
+}
+#sendAgain{
+	font-size: 12px;
+	position: absolute;
+	right: 15px;
+}
+#registerAgree {
+	text-align: center;
+}
+#registerAgree p {
+	color: #797979;
+	margin: 20px auto 0;
+}
+#registerAgree a {
+	display: inline-block;
+	color: #C9C9C9;
+	margin: 10px 0;
+}
+#confirmReister {
+	display: block;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	height: 45px;
+	width: 220px;
+	background-color: #33CCFF;
+	opacity: 0.75;
+	margin: 0 auto;
+	color: white;
+	font-size: 14px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/orders/confirmOrder.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var bodyWH=getWH();
+				setTargetWidth("#header",bodyWH.width+"px");
+				setTargetWidth("#footer",bodyWH.width+"px");
+				setTargetWidth("#personInfo",bodyWH.width+"px");
+				setTargetWidth("#goodsInfo",bodyWH.width+"px");
+				setTargetWidth(".storeList",bodyWH.width+"px");
+				setTargetWidth(".goodsContent",bodyWH.width-40+"px");
+				setTargetWidth(".goodsTitle",bodyWH.width-170+"px");
+				//给返回按钮绑定单击响应函数
+				Qselect("#back").onclick=function(){
+					history.back();
+				};
+			};
+			
+		</script>
+	</head>
+	<body>
+		<!--顶端菜单-->
+		<header id="header">
+			<ul>
+				<li id="back"><img src="../img/back_5.png"/></li>
+				<li>确认订单</li>
+				<li id="message"><a href="../message/message.html"><img src="../img/message/message1.png"/></a></li>
+			</ul>
+		</header>
+		<!--底部固定菜单-->
+		<footer id="footer">
+			<span id="count">合计：<i>￥</i><span id="totalPrice">25</span></span>
+			<a href="#">提交订单</a>
+		</footer>
+		
+		<!--收货人信息-->
+		<div id="personInfo">
+			<img src="../img/receiveGoods.png"/>
+			<span id="customer">收货人：<span id="NickName">熊猫灬拽拽</span></span>
+			<span id="cusPhone">13103067513</span>
+			<span id="cusAdderss">收货地址：<span>华北科技学院</span></span>
+		</div>
+		<!--商品信息（店铺名，商品，实付款，配送方式，留言）-->
+		<div id="goodsInfo">
+			<ul class="storeList">
+				<li class="store" id="storeID">
+					<div class="storeTitle">
+						<a href="../store/store.html" class="storeName">二货商店<img src="../img/trolley/go.png" alt="go!" /></a>
+						<a href="../message/chatWindow.html" class="chatWithSeller"><img src="../img/chatwithseller.png"/></a>
+					</div>
+					<ul class="goodsList">
+						<li class="goods" id="goodsID">
+							<div class="goodsContent">
+								<i class="goodsPicture"></i>
+								<a href="../goodsManger/goodsDetails.html" class="goodsTitle">无核酸甜红杏肉200g,的咖啡机的金发放假赶紧抢购了</a>
+								<span class="goodsPrice">价格：￥<span>12.5</span></span>
+								<span class="goodsCounts">x<span>1</span></span>
+							</div>
+						</li> 
+						<li class="goods" id="goodsID2">
+							<div class="goodsContent">
+								<i class="goodsPicture"></i>
+								<a href="../goodsManger/goodsDetails.html" class="goodsTitle">无核酸甜红杏肉200g,的咖啡机的金发放假赶紧抢购了</a>
+								<span class="goodsPrice">价格：￥<span>12.5</span></span>
+								<span class="goodsCounts">x<span>1</span></span>
+							</div>
+						</li> 
+					</ul>
+					<div class="payInfo">
+						<p class="">实付款 <span>￥</span> <span>20</span></p>
+						<p class="">配送方式 
+							<select name="deliverWay" class="deliverWay">
+								<option value="自取">自取</option>
+								<option value="送货上门">送货上门</option>
+							</select>
+						</p>
+						<p class="">邮费 <span class="postage">￥<span>5</span></span></p>
+					</div>
+					<div class="leaveWord">
+						<p>买家留言：</p>
+						<textarea name="leaveWord" class="leaveWords"></textarea>
+					</div>
+					
+				</li>
+			</ul>
+		
+		
+		</div><!--goodsInfo-->
+		
+		
+		
+		
+		
+	</body>
+</html>

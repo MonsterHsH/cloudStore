@@ -1,0 +1,293 @@
+{
+	"login.html": {
+		"resources": [
+			"img/user.png",
+			"img/login-background.png",
+			"img/check.png",
+			"css/mui.min.css",
+			"img/logo.png",
+			"img/Alipay.png",
+			"img/wechat.png",
+			"css/reset.css",
+			"register.html",
+			"css/login_register.css",
+			"index.html",
+			"img/QQ.png",
+			"img/microblog.png",
+			"img/help.png",
+			"js/function.js"
+		],
+		"refer": [
+			"register.html",
+			"index.html"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"css/mui.min.css",
+			"img/logo.png",
+			"index.html",
+			"css/reset.css",
+			"img/index/class.png",
+			"img/index.png",
+			"img/index/old.png",
+			"img/2c5aac7096c34b2bbbe78200375ffb95_th.png",
+			"img/back_5.png",
+			"img/index/lost.png",
+			"img/message/message1.png",
+			"img/index/newGoods.png",
+			"img/index/point2.png",
+			"img/index/store.png",
+			"img/index/hotGoods.png",
+			"img/index/point1.png",
+			"img/trolley.png",
+			"img/index/search.png",
+			"img/person.png",
+			"trolley.html",
+			"goodsList.html",
+			"storeList.html",
+			"myClass.html",
+			"login.html",
+			"lostAndFound.html",
+			"search/search.html",
+			"img/index_selected.png",
+			"person.html",
+			"message/message.html"
+		],
+		"refer": [
+			"index.html",
+			"trolley.html",
+			"goodsList.html",
+			"storeList.html",
+			"myClass.html",
+			"login.html",
+			"lostAndFound.html",
+			"search/search.html",
+			"person.html",
+			"trolley/trolley.html",
+			"goodsManger/goodsList.html",
+			"personal/person.html",
+			"store/storeList.html",
+			"goodsManger/goodsDetails.html",
+			"shareTrading/shareTrading.html",
+			"lostAndFound/lostAndFound.html"
+		]
+	},
+	"register.html": {
+		"resources": [
+			"css/login_register.css",
+			"css/reset.css",
+			"img/back_2.png",
+			"login.html",
+			"regester2.html"
+		],
+		"refer": [
+			"login.html",
+			"regester2.html"
+		]
+	},
+	"regester2.html": {
+		"resources": [
+			"register.html"
+		],
+		"refer": [
+			"register.html"
+		]
+	},
+	"search/search.html": {
+		"resources": [
+			"img/back_2.png",
+			"index.html",
+			"message/message.html",
+			"goodsList.html",
+			"js/mui.min.js"
+		],
+		"refer": [
+			"index.html",
+			"message/message.html",
+			"goodsList.html",
+			"goodsManger/goodsList.html"
+		]
+	},
+	"person.html": {
+		"resources": [
+			"img/funny/C960724F5AA07BB2ED9945724D20246B.gif",
+			"index.html",
+			"js/mui.min.js"
+		],
+		"refer": []
+	},
+	"storeList.html": {
+		"resources": [
+			"img/funny/2CD81C412C516F72841321FD1A68E45B.jpg",
+			"index.html"
+		],
+		"refer": []
+	},
+	"myClass.html": {
+		"resources": [
+			"img/funny/C960724F5AA07BB2ED9945724D20246B.gif",
+			"index.html",
+			"js/mui.min.js"
+		],
+		"refer": []
+	},
+	"goodsList.html": {
+		"resources": [
+			"img/funny/68AECBCBFD904A4AB977D69755D35334.jpg",
+			"search/search.html",
+			"js/mui.min.js",
+			"index.html"
+		],
+		"refer": []
+	},
+	"message/message.html": {
+		"resources": [
+			"img/funny/2FFFC7FFE33DFD948A13F750FCD221A7.jpg"
+		],
+		"refer": []
+	},
+	"trolley.html": {
+		"resources": [
+			"img/funny/24D572C7144A52D071F8EE251B417180.jpg",
+			"index.html"
+		],
+		"refer": []
+	},
+	"lostAndFound.html": {
+		"resources": [
+			"img/funny/87ED46124541252FB079FD9D9133C078.png",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"trolley/trolley.html": {
+		"refer": [
+			"index.html",
+			"personal/person.html",
+			"orders/confirmOrder.html"
+		]
+	},
+	"personal/person.html": {
+		"refer": [
+			"trolley/trolley.html",
+			"orders/allOrders.html",
+			"personal/personInfomation.html",
+			"index.html",
+			"store/myStore.html",
+			"store/regesterStore.html",
+			"personal/publishGoods.html"
+		]
+	},
+	"orders/confirmOrder.html": {
+		"refer": [
+			"trolley/trolley.html",
+			"goodsManger/goodsDetails.html",
+			"message/chatWindow.html"
+		]
+	},
+	"goodsManger/goodsDetails.html": {
+		"refer": [
+			"goodsManger/goodsList.html",
+			"orders/confirmOrder.html",
+			"index.html"
+		]
+	},
+	"goodsManger/goodsList.html": {
+		"refer": [
+			"store/store.html",
+			"goodsManger/goodsDetails.html",
+			"search/search.html",
+			"index.html"
+		]
+	},
+	"message/chatWindow.html": {
+		"refer": [
+			"orders/confirmOrder.html"
+		]
+	},
+	"personal/personInfomation.html": {
+		"refer": [
+			"personal/person.html",
+			"personal/setPersonInformation.html"
+		]
+	},
+	"personal/setPersonInformation.html": {
+		"refer": [
+			"personal/personInfomation.html",
+			"personal/alertPersonalInformation.html",
+			"personal/alterPhone.html",
+			"personal/addressManager.html"
+		]
+	},
+	"personal/alterPhone.html": {
+		"refer": [
+			"personal/setPersonInformation.html"
+		]
+	},
+	"personal/alertPersonalInformation.html": {
+		"refer": [
+			"personal/setPersonInformation.html"
+		]
+	},
+	"personal/addressManager.html": {
+		"refer": [
+			"personal/setPersonInformation.html"
+		]
+	},
+	"store/myStore.html": {
+		"refer": [
+			"personal/person.html"
+		]
+	},
+	"store/regesterStore.html": {
+		"refer": [
+			"personal/person.html"
+		]
+	},
+	"personal/publishGoods.html": {
+		"refer": [
+			"personal/person.html"
+		]
+	},
+	"store/storeList.html": {
+		"refer": [
+			"index.html",
+			"store/store.html"
+		]
+	},
+	"shareTrading/shareTrading.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"lostAndFound/lostAndFound.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"orders/allOrders.html": {
+		"refer": [
+			"orders/orderDetails.html",
+			"personal/person.html"
+		]
+	},
+	"orders/orderDetails.html": {
+		"refer": [
+			"orders/allOrders.html",
+			"personal/goodsEvalute.html"
+		]
+	},
+	"store/store.html": {
+		"refer": [
+			"store/storeList.html"
+		]
+	},
+	"personal/goodsEvalute.html": {
+		"refer": [
+			"orders/orderDetails.html"
+		]
+	}
+}

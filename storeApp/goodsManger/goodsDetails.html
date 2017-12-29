@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/goodsManager/goodsDetails.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var bodyWH=getWH();
+				setTargetWidth("#header",bodyWH.width+"px");
+				setTargetWidth("#loop",bodyWH.width+"px");
+				var ul=Qselect("#loop ul");
+				setTargetWidth("#loop ul",bodyWH.width*ul.childElementCount+"px");
+				setTargetWidth("#loop ul img",bodyWH.width+"px");
+				setTargetWidth("#footer",bodyWH.width+"px");
+				setTargetWidth(".tableName",bodyWH.width*0.3+"px" )
+				setTargetWidth(".tableDetails",bodyWH.width*0.7+"px" )
+				setTargetWidth("#goodsPara",bodyWH.width+"px");
+				setTargetWidth("#detPicture",bodyWH.width+"px");
+				//给返回按钮绑定单击响应函数
+				Qselect("#back").onclick=function(){
+					history.back();	
+				};
+				//轮播图处理
+				var slider = Qselect("#slider"); 
+				var pointDiv = document.getElementById("pointDiv");	                            //设置轮播图中的存放点的DIV点
+				var icon = pointDiv.getElementsByTagName("span");
+				AppTouch(slider,icon,pointDiv,bodyWH.width,true,3000);
+				
+				
+			};
+			
+			
+			
+		</script>
+		
+	</head>
+	<body>
+		<header id="header">
+			<a href="#">商品</a>
+			<a href="">详情</a>
+			<a href="">评价</a>
+		</header>
+		<footer id="footer">
+			<a href="../store/store.html"><img src="../img/store.png" alt="店铺" /><span>店铺</span></a>
+			<a href="../message/chatWindow.html"><img src="../img/seller.png" alt="聊天" /><span>客服</span></a>
+			<a id="buyGoods" href="../orders/confirmOrder.html">立即购买</a>
+			<span id="addToTrolley">加入购物车</span>
+		</footer>
+		<div id="loop">
+			<ul id="slider">
+				<li><img class="picture" src="../img/funny/183802-1205220H34686.jpg"/></li>
+				<li><img class="picture" src="../img/funny/20240126.jpg"/></li>
+				<li><img class="picture" src="../img/funny/timg (1).jpg"/></li>
+				<li><img class="picture" src="../img/funny/u=2886599141,71810605&fm=27&gp=0.jpg"/></li>
+			</ul>
+			<div id="pointDiv"></div>
+			<span id="back"><img src="../img/back.png" alt="返回" /></span>
+			<div id="message">
+				<a href="../message/message.html"><img src="../img/message/message5.png"/></a>
+				<span>5</span>
+			</div>
+		</div>
+		
+		<div id="goodsPara">
+			<p id="title">全球顶配，搞笑，笑死不偿命表情包，滑天下之大稽，不要998，只要99！</p>
+			<div id="priceAndSend">
+				<div id="oldPrice">
+					原价:
+					<span>￥</span>
+					<span class="price">998</span>
+				</div>
+				<div id="newPrice">
+					<span>￥</span>
+					<span class="price">99</span>
+				
+				</div>
+				<span id="sendPay">快递：<span>￥10</span></span>
+			</div>
+			
+			<div id="paraAndEva">
+				<span id="parameter">商品参数</span>
+				<span id="evaluate">评价</span>
+			</div>
+				<table border="1">
+					<thead>
+						<tr>
+							<th class="tableName" >名称</th>
+							<th class="tableDetails">介绍</th>
+						</tr>		
+					</thead>
+					<tbody>
+						<tr>
+							<td>无</td>
+							<td>无</td>
+						</tr>
+						<tr>
+							<td>无</td>
+							<td>无</td>
+						</tr>		
+					</tbody>	
+				</table>
+		</div>
+		<div id="detPicture">
+			<p>商品详情</p>
+			<ul>
+				<li class="goodsPic"><img src="../img/funny/60F7FCD08D3CEEB1BDA9CA3E59E8BEAA.jpg"/></li>
+				<li class="goodsPic"><img src="../img/funny/68AECBCBFD904A4AB977D69755D35334.jpg"/></li>
+				<li class="goodsPic"><img src="../img/funny/C960724F5AA07BB2ED9945724D20246B.gif"/></li>
+				<li class="goodsPic"><img src="../img/funny/E5146974B2B8F823A90E0667EC22C8AB.jpg"/></li>
+				<li class="goodsPic"><img src="../img/funny/2CD81C412C516F72841321FD1A68E45B.jpg"/></li>		
+			</ul>
+		</div>
+	</body>
+</html>

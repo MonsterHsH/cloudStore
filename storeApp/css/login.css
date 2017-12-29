@@ -1,0 +1,102 @@
+body {
+	background-color: #F2F2F2;
+	overflow: hidden;
+}
+#outer {
+	position: relative;
+	height: 667px;
+}
+#loginUp {
+	height: 34%;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#loginUp a{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+#loginCenter {
+	height: 33%;
+}
+#input {
+	height: 50%;
+}
+#input input {
+	background: none;
+	border: none;
+	outline: none;
+	display: block;
+	height: 50%;
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: 1px solid #f93;
+	vertical-align: bottom;
+	font-size: 1.2em;
+}
+#a {
+	height: 25%;
+	position: relative;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:active {
+	color: #999999;
+}
+#register {
+	position: absolute;
+	left: 10%;
+	top: 20px;
+}
+#sendCheckRequrest {
+	position: absolute;
+	right: 10%;
+	top: 20px;
+}
+#loginButton {
+	height: 40px;
+	background: #33CCFF;
+	opacity: 0.75;
+	border-radius: 30px;
+	width: 220px;
+	margin: 10px auto 0;
+}
+#loginButton a {
+	display: block;
+	height: 40px;
+	width: 220px;
+	border-radius: 60px;
+	line-height: 40px;
+	margin: 0 auto;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+#loginButton a:active {
+	background-color: transparent;
+}
+#loginBottom {
+	height: 33%;
+}
+#otherLoginText {
+	height: 50%;
+	position: relative;
+}
+#otherLoginText p {
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	color: #AEAEAE;
+}
+#otherLoginImage {
+	height: 50%;
+	text-align: center;
+	padding: 20px 0 0;
+}
+#otherLoginImage img {
+	margin: 0 10px;
+}

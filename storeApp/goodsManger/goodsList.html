@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/goodsManager/goodsList.css"/>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var bodyWH=getWH();
+				setTargetWidth("#header",bodyWH.width+"px");
+				setTargetWidth("#goodsList",bodyWH.width+"px");
+				setTargetWidth(".goodsTitle",bodyWH.width-130+"px");
+				//给返回按钮绑定单击响应函数
+				Qselect("#back").onclick=function(){
+					history.back();
+				};
+			};
+			
+			
+		</script>
+		</head>
+	<body>
+		<header id="header">
+			<div id="topMenu">
+				<span id="back"><img src="../img/back_2.png"/></span>
+				<a href="../search/search.html" id="search">吃货锦囊</a>
+				<a href="../message/message.html" id="message"><img src="../img/message/message1.png"/></a>
+			</div>
+			
+			<div id="rangMenu">
+				<span id="allGoods">全部</span>
+				<span id="salesVolume">销量</span>
+				<span id="pricePriority">价格</span>
+			</div>
+			<span id="selectBy"></span>
+			
+		</header>
+		
+		<div id="goodsList">
+			<ul>
+				<li class="goods" id="goodsID">
+					<i class="goodsPicture"></i>
+					<span class="isNewGoods">新品</span>
+					<a href="../goodsManger/goodsDetails.html" class="goodsTitle">无核酸甜红杏肉200g,的咖啡机的金发放假赶紧抢购了</a>
+					<span class="goodsType">类型：<span>食品</span></span>
+					<span class="salesVolume"><span>12</span>\月</span>
+					<span class="goodsPrice">￥<span>12.5</span></span>
+					<a href="../store/store.html" id="storeID" class="storeName">剁手店铺 <img src="../img/person/go.png"/></a>
+				</li> 
+				<li class="goods" id="goodsID2">
+					<i class="goodsPicture"></i>
+					<span class="isNewGoods">新品</span>
+					<a href="../goodsManger/goodsDetails.html" class="goodsTitle">无核酸甜红杏肉200g,的咖啡机的金发放假赶紧抢购了</a>
+					<span class="goodsType">类型：<span>食品</span></span>
+					<span class="salesVolume"><span>12</span>\月</span>
+					<span class="goodsPrice">￥<span>12.5</span></span>
+					<a href="../store/store.html" id="storeID2" class="storeName">剁手店铺 <img src="../img/person/go.png"/></a>
+				</li> 
+				
+				
+				<li class="goods" id="goodsID3">
+					<i class="goodsPicture"></i>
+					<span class="isNewGoods">新品</span>
+					<a href="../goodsManger/goodsDetails.html" class="goodsTitle">无核酸甜红杏肉200g,的咖啡机的金发放假赶紧抢购了</a>
+					<span class="goodsType">类型：<span>食品</span></span>
+					<span class="salesVolume"><span>12</span>\月</span>
+					<span class="goodsPrice">￥<span>12.5</span></span>
+					<a href="../store/store.html" id="storeID3" class="storeName">剁手店铺 <img src="../img/person/go.png"/></a>
+				</li> 
+				
+				
+				<li class="goods" id="goodsID4">
+					<i class="goodsPicture"></i>
+					<span class="isNewGoods">新品</span>
+					<a href="../goodsManger/goodsDetails.html" class="goodsTitle">无核酸甜红杏肉200g,的咖啡机的金发放假赶紧抢购了</a>
+					<span class="goodsType">类型：<span>食品</span></span>
+					<span class="salesVolume"><span>12</span>\月</span>
+					<span class="goodsPrice">￥<span>12.5</span></span>
+					<a href="../store/store.html" id="storeID4" class="storeName">剁手店铺 <img src="../img/person/go.png"/></a>
+				</li> 
+				
+				
+				<li class="goods" id="goodsID5">
+					<i class="goodsPicture"></i>
+					<span class="isNewGoods">新品</span>
+					<a href="../goodsManger/goodsDetails.html" class="goodsTitle">无核酸甜红杏肉200g,的咖啡机的金发放假赶紧抢购了</a>
+					<span class="goodsType">类型：<span>食品</span></span>
+					<span class="salesVolume"><span>12</span>\月</span>
+					<span class="goodsPrice">￥<span>12.5</span></span>
+					<a href="../store/store.html" id="storeID5" class="storeName">剁手店铺 <img src="../img/person/go.png"/></a>
+				</li> 
+				
+				
+				<li class="goods" id="goodsID6">
+					<i class="goodsPicture"></i>
+					<span class="isNewGoods">新品</span>
+					<a href="../goodsManger/goodsDetails.html" class="goodsTitle">无核酸甜红杏肉200g,的咖啡机的金发放假赶紧抢购了</a>
+					<span class="goodsType">类型：<span>食品</span></span>
+					<span class="salesVolume"><span>12</span>\月</span>
+					<span class="goodsPrice">￥<span>12.5</span></span>
+					<a href="../store/store.html" id="storeID6" class="storeName">剁手店铺 <img src="../img/person/go.png"/></a>
+				</li> 
+				
+				
+				
+			</ul>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,229 @@
+body {
+	overflow: hidden;
+}
+#personHeader {
+	width: 100%;
+	height: 125px;
+	background-color: #6699FF;
+	position: relative;
+}
+#personSet {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+}
+#goToMessage {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+#photo img{
+	width: 75px;
+	height: 75px;
+	border-radius: 75px;
+	position: absolute;
+	top: 25px;
+	left: 45px;
+	background-color:white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#myPointsAndNickName {
+	height: 40px;
+	position: absolute;
+	left: 135px;
+	top: 60px;
+}
+#myPointsAndNickName p {
+	font-size: 14px;
+	color: white;
+}
+#myPoints {
+	margin: 10px 0;
+}
+#myPoints:before {
+	content: url(../../img/person/point.png) " ";
+	display: inline;
+}
+#myPoints span {
+	position: relative;
+	top: -3px;
+}
+#allOrder {
+	height: 145px;
+	width: 100%;
+	border-bottom: 1px solid #E4E4E4;
+}
+#order {
+	height: 40px;
+	border-bottom: 1px solid #E4E4E4;
+	display: flex;
+	align-items: center;
+	color: #949494;
+	padding: 0 10px;
+	position: relative;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+#orderA {
+	color: #949494;
+	font-size: 12px;
+	position: absolute;
+	right: 30px;
+	top: 14px;
+}
+#orderA img {
+	position: relative;
+	top: 1px;
+	right: 2px;
+}
+#waitDiv {
+	position: relative;
+}
+#waitDiv a {
+	display: block;
+	position: absolute;
+}
+#waitPay {
+	position: absolute;
+	left: 15px;
+	top: 5px;
+}
+#waitReceive {
+	position: absolute;
+	right: 50px;
+}
+#waitSend {
+	position: absolute;
+	left: 15px;
+	top: 50px;
+}
+#waitEvaluate {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+}
+.goodsCount {
+	background-color: red;
+	height: 12px;
+	width: 12px;
+	border-radius: 10px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 12px;
+	position: relative;
+	left: -60px;
+	top: -15px;
+	color: white;
+	display: inline-block;
+}
+/*设置功能入口中的文字与字体对齐*/
+
+.functionEntry {
+	position: relative;
+	top: 10px;
+}
+#goodsListTitle{
+	display: block;
+	text-align: center;
+	padding: 0 0 0 10px;
+	height: 40px;
+	line-height: 40px;
+}
+#goodsList ul{
+	border-top: 1px solid #E4E4E4;
+}
+#goodsList ul li{
+	float: left;
+	height: 200px;
+	background-color: #F2F2F2;
+	margin: 2px 2px;
+	position: relative;
+}
+#goodsList ul li img{
+	width: 100%;
+	height: 120px;
+}
+.isNewGoods,.isOldGoods{
+	display: inline-block;
+	height: 14px;
+	width: 40px;
+	line-height: 14px;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+}
+.isNewGoods{
+	background-color:red;
+}
+.isOldGoods{
+	background-color: #33CCFF;
+}
+.goodsTitle{
+	line-height: 16px;
+	height: 32px;
+	overflow: hidden;
+	font-size: 12px;
+	position:absolute;
+	top: 125px;
+	left: 5px;
+	text-indent: 40px;
+}
+.price{
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	color: red;
+}
+.counts{
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+
+#outer:after{
+	content: "";
+	display: block;
+	height: 40px;
+	clear: both;
+}
+#footer {
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	bottom: 0px;
+	background-color: #F2F2F2;
+	-webkit-transform: translateZ(0);
+	z-index: 999;
+}
+#home {
+	position: absolute;
+	left: 30px;
+	top: 5px;
+	background-image: url(../../img/index.png);
+	height: 32px;
+	width: 32px;
+}
+#trolley {
+	position: absolute;
+	left: 45%;
+	top: 5px;
+	background-image: url(../../img/trolley.png);
+	height: 32px;
+	width: 32px;
+}
+#person {
+	position: absolute;
+	right: 30px;
+	top: 5px;
+	background-image: url(../../img/person.png);
+	height: 32px;
+	width: 32px;
+}
+
+
+
