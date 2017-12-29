@@ -10,7 +10,7 @@
 <body>
 <%
 
-	com.cloudstore.tools.javaBean.SendMessage.sendMessage("18875686859", "15151");
+	//com.cloudstore.tools.javaBean.SendMessage.sendMessage("18875686859", "15151");
 
 %>
 </body>

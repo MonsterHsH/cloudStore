@@ -11,7 +11,10 @@ window.onload=function(){
 	setTargetWidth("#slider li",bodyWH.width+"px"); 
 	
 	//检测是否已经登陆，若没登陆则跳转到login页面
-	
+	var storage=localStorage;   
+	if(storage["phone"]==null){
+		window.location.href="login.html";
+	}
 	//获取热销商品
 	
 	//上拉加载热销商品

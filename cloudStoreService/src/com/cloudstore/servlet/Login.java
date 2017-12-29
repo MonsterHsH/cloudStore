@@ -6,19 +6,19 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import com.alibaba.fastjson.JSONObject;
 
 /**
- * 处理注册的servlet
- * @author 82871
- *
+ * Servlet implementation class Login
  */
-@WebServlet(name = "register", urlPatterns = { "/register" })
-public class Register extends HttpServlet {
+@WebServlet(name = "login", urlPatterns = { "/login" })
+public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    public Register() {
+    public Login() {
         super();
     }
+
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String data=request.getParameter("data");
 		String msg="1";
@@ -41,7 +41,7 @@ public class Register extends HttpServlet {
 		}catch (NullPointerException e) {
 			msg="6";     //未发送验证码
 		}
-		//从数据库查询该手机号是否被注册，若被注册msg="2"
+		//从数据库查询该手机号是否被注册，若未注册msg="2"
 		if(phoneNumber!=null){
 			if(checkNumber.equals(serverCheckNumber)){
 				msg="1";
@@ -53,6 +53,8 @@ public class Register extends HttpServlet {
 		//否则msg="3"	
 		System.out.println("phoneNumber:"+phoneNumber+"\tcheckNumber:"+checkNumber+"\tserverCheckNumber:"+serverCheckNumber);
 		response.getWriter().print(msg);
+	
+
 	}
 
 }

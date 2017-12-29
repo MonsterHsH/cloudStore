@@ -34,6 +34,7 @@ body {
 	border-bottom: 1px solid #f93;
 	vertical-align: bottom;
 	font-size: 1.2em;
+	text-align: center;
 }
 #a {
 	height: 25%;
@@ -57,28 +58,21 @@ a:active {
 	top: 20px;
 }
 #loginButton {
+	display: block;
+	border: none;
+	outline: none;
 	height: 40px;
+	line-height: 40px;
+	color: white;
+	text-align: center;
+	font-size: 16px;
 	background: #33CCFF;
 	opacity: 0.75;
 	border-radius: 30px;
 	width: 220px;
 	margin: 10px auto 0;
 }
-#loginButton a {
-	display: block;
-	height: 40px;
-	width: 220px;
-	border-radius: 60px;
-	line-height: 40px;
-	margin: 0 auto;
-	font-weight: bold;
-	color: white;
-	text-align: center;
-}
-#loginButton a:active {
-	background-color: transparent;
-}
-#loginBottom {
+#otherLogin {
 	height: 33%;
 }
 #otherLoginText {

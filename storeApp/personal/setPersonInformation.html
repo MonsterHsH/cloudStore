@@ -41,6 +41,12 @@
 			Qselect("#back").onclick=function(){
 				history.back();
 			};
+			document.getElementById("exit").onclick=function(event){
+				var target=event.target;
+				var storage=localStorage;
+				storage.removeItem("phone");
+				window.location.href="../login.html";
+			}
 			
 			
 			

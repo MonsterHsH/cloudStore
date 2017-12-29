@@ -436,7 +436,8 @@
 					"personal/personInfomation.html",
 					"personal/alertPersonalInformation.html",
 					"personal/alterPhone.html",
-					"personal/addressManager.html"
+					"personal/addressManager.html",
+					"login.html"
 				],
 				"priority": 0
 			},

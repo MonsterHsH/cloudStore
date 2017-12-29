@@ -41,7 +41,7 @@ input {
 	text-indent: 1em;
 	font-size: 14px;
 }
-#sendAgain{
+#sendCheck{
 	font-size: 12px;
 	position: absolute;
 	right: 15px;

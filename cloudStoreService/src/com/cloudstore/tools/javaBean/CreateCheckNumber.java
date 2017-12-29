@@ -5,7 +5,7 @@ package com.cloudstore.tools.javaBean;
  * @author 82871
  *
  */
-public class Tools {
+public class CreateCheckNumber {
 	
 	/**
 	 * 获取6位数的验证码

@@ -219,8 +219,9 @@ function AppTouch(slider,icon,pointDiv,Width,auto,time)
  * @param {Object} data
  * @param {Object} url
  */
-function asyRequest(callBack,data,url){
+function sendRequest(callBack,data,url){
 	var request = new XMLHttpRequest();           
+	var url=url||"http://47.93.193.30:5655/cloudStoreService/do";
 	method="POST";
 	request.open(method, url, true);         
 	request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");   
@@ -234,3 +235,67 @@ function asyRequest(callBack,data,url){
 		}	
 	};
 };
+
+/**
+ * 向服务器请求验证码
+ * @param {Object} eventTarget  出发事件的元素
+ * @param {Object} phone        手机号码
+ * @param {Object} fun          处理服务器返回数据的回掉函数 
+ */
+function sendCheckNumber(eventTarget,phone,fun){
+	eventTarget.addEventListener("click",sendCheck,false);
+	function sendCheck(event){
+		if(checkPhone(phone.value)){
+			//单击事件开始时，取消该对象的单击事件，向服务器发送生成验证码的请求，并显示倒计时
+			eventTarget.removeEventListener("click",sendCheck,false);
+			//向服务器发送的数据
+			var data="type=getCheckNumber&phoneNumber="+phone.value;
+			sendRequest(fun,data);     //发送数据
+	 		var countTime=59;          //倒计时59秒
+			var countDown=setInterval(function(){
+				eventTarget.innerHTML=countTime--+"S";
+				if(countTime===0){
+					eventTarget.innerHTML="重新发送";
+					clearInterval(countDown);
+					//倒计时结束后重新绑定事件
+					eventTarget.addEventListener("click",sendCheck,false);
+				}
+			},1000);
+		}
+		else{
+			alert("请检查手机号是否正确！");
+			phone.focus();
+		}
+	};	
+};
+/**
+ * 检查手机号格式是否正确
+ * @param {Object} phoneNumber
+ */
+function checkPhone(phoneNumber){ 
+//	alert(phoneNumber.length);
+	if(phoneNumber.length===11){
+		var number=Trim(phoneNumber,"g");
+		if(number.length==11){
+			return true; 
+		}
+	}else{
+		return false;
+	}
+	
+};
+/**
+ * 除去字符串中的所有空格
+ * @param {Object} str   需要格式化的字符串
+ * @param {Object} is_global  如果要除去所有空格则需要传入 “g”
+ */
+function Trim(str,is_global)
+  {
+   var result;
+   result = str.replace(/(^\s+)|(\s+$)/g,"");
+   if(is_global.toLowerCase()=="g")
+   {
+    result = result.replace(/\s/g,"");
+    }
+   return result;
+}

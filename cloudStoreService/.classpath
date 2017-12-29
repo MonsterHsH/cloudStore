@@ -18,6 +18,7 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.43-bin.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aliyun-java-sdk-dysmsapi-1.0.0.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aliyun-java-sdk-core-3.3.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/fastjson-1.2.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
